@@ -73,7 +73,7 @@ Hasil ditulis ke `data/`:
 | `tapes.json` | pita harga M5 per posisi |
 | `ai.json` | evaluasi AI per posisi (`position_id` → teks) |
 
-Lihat hasil di web pakai project **mt5-dashboard**.
+Lihat hasil di web lewat dashboard di folder [`htdocs/`](../htdocs) (satu repo).
 
 ## 5. Troubleshooting
 

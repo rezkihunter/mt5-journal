@@ -1,6 +1,6 @@
 # MT5 Journal
 
-Skrip Python untuk menarik riwayat trade dari MetaTrader 5, menyimpan snapshot posisi, dan mengevaluasi tiap posisi yang baru ditutup dengan LLM (OpenRouter). Data JSON-nya dipakai oleh dashboard **mt5-dashboard**.
+Skrip Python untuk menarik riwayat trade dari MetaTrader 5, menyimpan snapshot posisi, dan mengevaluasi tiap posisi yang baru ditutup dengan LLM (OpenRouter). Data JSON-nya dipakai oleh dashboard di folder [`htdocs/`](../htdocs) (satu repo).
 
 > Panduan lengkap (setup + cara pakai): **[TUTORIAL.md](TUTORIAL.md)**
 

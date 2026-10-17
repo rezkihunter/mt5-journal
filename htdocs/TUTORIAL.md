@@ -5,7 +5,7 @@ Panduan memasang dan memakai dashboard.
 ## 1. Prasyarat
 
 - Web server Apache + PHP 7.4/8.x.
-- Data dari project **mt5-journal** (folder `JurnalMT5/data/`).
+- Data dari folder **`JurnalMT5/data/`** (satu repo).
 
 ## 2. Struktur folder yang benar
 
@@ -22,7 +22,7 @@ workspace/
 
 ## 3. Setup
 
-1. Clone repo dan letakkan seperti struktur di atas (sebelah folder `JurnalMT5`).
+1. Pastikan folder `JurnalMT5/` ada di sebelah folder ini (sudah satu repo).
 2. Arahkan **DocumentRoot** Apache ke folder repo ini.
    Contoh `httpd.conf`:
    ```apache
@@ -54,6 +54,6 @@ Buka `http://127.0.0.1:8080`. Pastikan folder `../JurnalMT5/data` sudah berisi d
 
 | Gejala | Penyebab | Solusi |
 |---|---|---|
-| Tabel kosong, `api.php` balas `{}` | Belum ada data / path `JurnalMT5/data` salah | Jalankan collector **mt5-journal** dulu; pastikan folder sibling benar |
+| Tabel kosong, `api.php` balas `{}` | Belum ada data / path `JurnalMT5/data` salah | Jalankan collector di `JurnalMT5/` dulu; pastikan folder sibling benar |
 | 404 Not Found | DocumentRoot belum ke folder ini | Perbaiki `DocumentRoot` di Apache |
-| Perubahan data tidak muncul | Data belum di-refresh logger | Tunggu logger berikutnya (mt5-journal) |
+| Perubahan data tidak muncul | Data belum di-refresh logger | Tunggu logger berikutnya (`JurnalMT5/run.bat`) |

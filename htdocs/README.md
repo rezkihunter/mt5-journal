@@ -21,9 +21,9 @@ Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi
 ## Menjalankan (lokal)
 
 1. Jadikan folder ini sebagai DocumentRoot Apache (contoh `http://127.0.0.1:2026`).
-2. Pastikan folder `../JurnalMT5/data/` berisi data hasil logger — lihat project **mt5-journal**.
+2. Pastikan folder `../JurnalMT5/data/` berisi data hasil logger — lihat folder [`JurnalMT5/`](../JurnalMT5) (satu repo).
 3. Buka `index.php` di browser.
 
 ## Data
 
-`api.php` membaca `closed.json`, `ai.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh project `mt5-journal`.
+`api.php` membaca `closed.json`, `ai.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh folder [`JurnalMT5/`](../JurnalMT5).
