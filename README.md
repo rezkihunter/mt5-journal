@@ -2,6 +2,8 @@
 
 Skrip Python untuk menarik riwayat trade dari MetaTrader 5, menyimpan snapshot posisi, dan mengevaluasi tiap posisi yang baru ditutup dengan LLM (OpenRouter). Data JSON-nya dipakai oleh dashboard **mt5-dashboard**.
 
+> Panduan lengkap (setup + cara pakai): **[TUTORIAL.md](TUTORIAL.md)**
+
 ## Alur
 
 1. `fetch_closed.py` — konek ke MT5 (paket `MetaTrader5`), ambil posisi closed baru, gabung data SL/TP, simpan pita harga M5 ("tape"), lalu tulis `data/` (`closed.json`, `open.json`, `account.json`, `meta.json`, `sl_snapshot.json`, `tapes.json`).
