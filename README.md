@@ -2,6 +2,8 @@
 
 Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi close/open, hasil TP/SL, kalender harian, dan evaluasi AI per posisi. Tanpa database — data dibaca langsung dari file JSON.
 
+> Panduan lengkap (setup + cara pakai): **[TUTORIAL.md](TUTORIAL.md)**
+
 ## Fitur
 
 - Ringkasan akun & metrik trade (net, winrate, jumlah posisi)
