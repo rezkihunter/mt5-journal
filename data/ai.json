@@ -1,0 +1,368 @@
+{
+ "2813624569": {
+  "evaluasi": "**Analisis Trade XAUUSDm SELL 0.01 Lot**\n\n**1. Penyebab Hit SL**\nHarga bergerak **naik 500 poin (5.00 USD/0.01 lot)** dari entry 4144.251 ke SL 4149.251 dalam 169 menit. Ini menunjukkan **analisis arah trend salah** (counter-trend tanpa konfirmasi reversal) atau entry di *demand zone* yang ternyata tidak hold. Volatilitas XAUUSD rata-rata 100–200 poin/jam; pergerakan 500 poin < 3 jam menandakan momentum *bullish* kuat (mungkin triggered oleh data fundamental USD lemah/geopolitik) yang melanggar struktur *lower high* yang diharapkan.\n\n**2. Aspek Benar dari Setup**\n- **Risk Management Terukur:** RR 1:1 (SL 500 poin, TP 1000 poin) dan risiko $5/0.01 lot (~0.5–1% modal $500–$1k) disiplin.\n- **Eksekusi Rencana:** Trade tidak di-*average down*, tidak dipindahkan SL, dan durasi 2.8 jam menunjukkan *holding power* sesuai rencana *intraday swing*, bukan *scalping* panik.\n\n**3. Satu Perbaikan Konkret**\n**Tambahkan filter \"Trend Alignment\" H1/M15 sebelum entry SELL.** Hanya ambil SELL jika: (a) H1 close di bawah EMA 20/50, **DAN** (b) M15 membentuk *lower high* + *break of structure* (BOS) bearish *retest*. Jika harga di atas MA H1 atau M15 *bullish structure*, **lewati trade** meski",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-14 19:07:26",
+  "hasil": "SL"
+ },
+ "2814002683": {
+  "evaluasi": "Berikut adalah analisis singkat untuk trade XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga bergerak berlawanan arah dengan posisi *Sell* Anda. Terjadi kenaikan harga sebesar 50 pips dalam waktu sangat singkat (4,4 menit), yang mengindikasikan adanya momentum *bullish* kuat atau volatilitas tinggi (kemungkinan rilis berita/spike) yang langsung mendorong harga menyentuh batas Stop Loss.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Penggunaan lot kecil (0.01) sangat tepat untuk mengontrol risiko.\n*   **Disiplin:** Anda menggunakan SL yang terpasang secara sistematis, sehingga kerugian terukur dan tidak terjadi *floating* yang tidak terkendali.\n*   **Risk-Reward Ratio:** Target TP (100 pips) dua kali lebih besar dari SL (50 pips), menunjukkan perencanaan rasio 1:2 yang sehat.\n\n**3. Perbaikan Konkret**\n**Analisis Timeframe Lebih Tinggi:** Durasi trade yang hanya 4 menit menunjukkan Anda masuk di *noise* pasar. Sebelum *Sell*, pastikan tidak ada *resistance* yang tertembus di timeframe H1 atau H4. Jangan melawan tren kuat (*don't fight the trend*) saat momentum sedang naik tajam.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-14 20:52:09",
+  "hasil": "SL"
+ },
+ "2814085035": {
+  "evaluasi": "Berikut adalah analisis trading XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga bergerak berlawanan dengan posisi *Sell* Anda. Kenaikan 50 pips (dari 4098 ke 4103) dalam waktu singkat (8,6 menit) menunjukkan adanya momentum *bullish* yang kuat atau reaksi terhadap rilis data ekonomi/berita mendadak yang mendorong harga naik tajam melampaui batas risiko Anda.\n\n**2. Hal yang Benar dari Setup**\n**Manajemen Risiko.** Anda menggunakan lot kecil (0.01) dan menetapkan *Stop Loss* (SL) yang jelas sejak awal. Kedisiplinan menggunakan SL mencegah kerugian yang lebih besar (*floating* tak terkendali) saat pasar bergerak agresif melawan posisi Anda.\n\n**3. Perbaikan Konkret**\n**Analisis Timeframe Lebih Tinggi.** Durasi trade yang sangat singkat (8 menit) dengan hasil SL menunjukkan Anda kemungkinan melakukan *scalping* melawan tren besar. Sebelum *Sell*, pastikan harga berada di area *Resistance* kuat pada TF H1 atau H4, bukan sekadar koreksi kecil di TF rendah, untuk menghindari terjebak dalam momentum *bullish*.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-14 21:47:08",
+  "hasil": "SL"
+ },
+ "2814158030": {
+  "evaluasi": "**Analisis Trade XAUUSDm SELL 0.01 Lot (Durasi 12.4 Menit, TP Hit)**\n\n**1. Penyebab Hit TP (Gerakan Cepat & Ekspansif)**\nHarga turun **1.000 poin (100 pip) dalam 12,4 menit** — kecepatan ~80 pip/menit. Ini **bukan pergerakan normal** sesi Asia/Eropa awal, melainkan reaksi **news high-impact** (CPI/PPI/NFP US, FOMC speech, atau data China) atau *liquidity sweep* pada jam buka sesi London/NY. SL jarak 500 poin (50 pip) tidak tersentuh karena *momentum* bearish sangat kuat (*impulsive wave*), tidak memberi kesempatan *pullback* signifikan.\n\n**2. Aspek Benar dari Setup**\n- **Risk:Reward 1:2** (Risk $5 → Reward $10) — matematis *positive expectancy*.\n- **Disiplin eksekusi**: SL/TP tetap, tidak *move to BE* terlalu cepat yang berpotensi *stop out* di *noise* awal.\n- **Ukuran lot 0.01** — konserv",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-14 22:42:25",
+  "hasil": "TP"
+ },
+ "2814126785": {
+  "evaluasi": "**Analis Trade USTECm SELL 0.05 Lot (TP Hit)**\n\n**1. Penyebab Hit TP**\nHarga turun 100 poin (30262 → 30162) dalam 35 menit menunjukkan **momentum bearish impulsif yang kuat**. Kemungkinan besar entry dilakukan saat harga *breakdown* struktur timeframe rendah (M5/M15) atau menolak *supply zone*/resistance intraday dengan volume tinggi. Cepatnya durasi mengindikasikan *selling pressure* dominan tanpa pullback signifikan, mendorong harga lurus ke target.\n\n**2",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-14 22:43:02",
+  "hasil": "TP"
+ },
+ "2814131938": {
+  "evaluasi": "**Analis Trade BTCUSDm SELL 0.01 Lot**\n\n**1. Penyebab Manual Close (Bukan TP Asli)**\nTrade ditutup di **81580.22** (profit 100 poin/$1), sedangkan TP asli berada di **81180.22** (target 500 poin). Harga *belum* menyentuh TP. Penutupan manual ini kemungkinan besar dipicu oleh: (a) **Reaksi emosional** takut profit hilang (FOMO/loss aversion) saat harga mend",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-14 22:47:32",
+  "hasil": "TP/manual-profit"
+ },
+ "2814248642": {
+  "evaluasi": "**Analisis Trade XAUUSDm SELL 0.01 Lot**\n\n**1. Penyebab Hit SL**\nHarga bergerak **menembus level resistance/structure atas** sebesar 500 poin (5.000 pipette) dalam 33 menit, menunjukkan **tekanan beli dominan (bullish momentum)** yang tidak terduga atau *breakout* palsu (*fakeout*) yang berbalik jadi tren naik kuat. Entry di 4081.315 kemungkinan dilakukan **terlalu awal (premature)** tanpa menunggu konfirmasi penolakan (rejection candle/structure break M1/M5) di area supply/resistance valid. Volatilitas tinggi (gerakan 500 poin/33 menit ≈ 15 poin/menit) juga mempercepat SL tersentuh.\n\n**2. Yang Benar dari Setup**\n*   **Risk Management Terpusat:** RRR 1:1 (SL 500 poin, TP 1000 poin) standar dan wajar untuk scalping/day trade.\n*   **Sizing Konservatif:** 0.01 lot menghasilkan risiko absolut hanya **$5.00** (≈0.5% modal $1k), sangat aman untuk psikologi & *survivability* akun.\n*   **Disiplin Eksekusi:** Trade dibiarkan hingga SL/TP tanpa intervensi emosional (manual close awal/perpanjangan SL).\n\n**3. Satu Perbaikan Konkret**\n**Tambahkan filter \"Entry Trigger\" timeframe rendah (M1/M5).** Jangan entry *limit order* di level saja. Tunggu **struktur pasar berbalik (Break of Structure - BOS / Change of Character - CHoCH)** di TF M5 atau M1 ke arah SELL *setelah* harga menyentuh zona 40",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 00:27:32",
+  "hasil": "SL"
+ },
+ "2814268551": {
+  "evaluasi": "**Analisis Trade XAUUSDm SELL 0.01 Lot**\n\n**1) Penyebab Hit SL**\nHarga bergerak **naik 500 poin (5.0 USD)** dari entry 4086.351 hingga menyentuh SL di 4091.351 dalam 50 menit. Pergerakan ini menunjukkan **tekanan beli dominan (bullish momentum)** yang menolak level entry. Kemungkinan besar entry dilakukan di area *support* yang ternyata lemah, *breakout* palsu ke atas, atau trade berlawanan arah tren intraday (misal M15/H1 bullish). Volatilitas tinggi emas (rata-rata >100 poin/15 menit) membuat SL 500 poin terlalu sempit untuk *swing* 50 menit tanpa *buffer* struktur.\n\n**2) Apa yang Benar**\n- **Risk Management Kuantitatif Baik:** Risk **$5 (0.5% dari $1k equity)** sangat disiplin. RRR **1:1.47** (SL 500 poin vs TP 735 poin) matematis menguntungkan (>1:1).\n- **Eksekusi Tertata:** SL/TP diletakkan sejak awal (*set & forget*), menghilangkan keputusan emosional saat trade berjalan.\n- **Ukuran Lot Konsisten:** 0.01 lot cocok untuk *learning* atau akun kecil.\n\n**3) Satu Perbaikan Konkret**\n**Pindahkan SL di atas struktur harga terakhir (Swing High/Order Block M15/H1), bukan jarak poin tetap.**\n*Contoh:* Jika Swing High M15 ada di 4093.0, taruh SL di 4093.5 (spread buffer). Ini memperlebar *breathing room* ~670 poin. Konsekuensinya, **turunkan lot jadi 0.007** agar risk tetap $5. Trade akan tahan terhadap *noise",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 01:17:43",
+  "hasil": "SL"
+ },
+ "2814301010": {
+  "evaluasi": "**Analisis Trade USTECm BUY 0.05 Lot**\n\n**1. Penyebab Manual-Close (Bukan SL/TP Murni)**\nKarena SL/TP = 0.0, posisi ditutup manual setelah **2.2 menit** dengan kerugian 19.12 poin (-$0.96). Penyebab utamanya: **entry tepat di puncak microtick/breakout palsu** diikuti tekanan jual instan (aggressive selling). Durasi super singkat menunjukkan *immediate adverse excursion*—harga bergerak lawan segera setelah eksekusi, menandakan *timing* salah (chasing price) atau masuk saat *spread* melebar/likuiditas tipis.\n\n**2. Apa yang Benar dari Setup**\n- **Manajemen Risiko Instinktif:** Menutup manual di -$0.96 (R:R ~1:0.1) jauh lebih baik dari biarkan \"doa\" tanpa SL keras. Disiplin *cut loss* cepat melindungi modal dari *drawdown* besar.\n- **Ukuran Lot Konservatif:** 0.05 lot di Nasdaq (kontrak $0.50/poin) menjaga risiko nominal kecil (<1% modal asumsi $100+), cocok untuk *scalping* uji coba.\n\n**3. Satu Perbaikan Konkret**\n**Pasang Hard Stop Loss (SL) sebelum/sekali klik Buy.** Tentukan SL berbasis struktur (misal: di bawah *swing low* 1M/5M atau *VWAP* session) + buffer spread, bukan berbasis uang. Contoh: SL di 29990 (10 poin di bawah entry). Ini memaksa *risk-defined entry*, mencegah *emotional decision* di detik kritis, dan mengubah trade jadi *setup* probabilistik bukan judi *tick-by-tick*.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 01:27:29",
+  "hasil": "SL/manual-loss"
+ },
+ "2814301013": {
+  "evaluasi": "**Analis Trading USTECm**\n\n**1) Penyebab Manual-Close (Loss)**\nTrade ditutup manual setelah **2.1 menit** dengan kerugian 20 poin (29999.06 → 29979.06). Karena **SL = 0.0**, tidak ada perlindungan otomatis. Penutupan manual ini kemungkinan besar *panic exit* atau *discretionary cut* saat harga bergerak cepat melawan arah (bearish candle/wick down) tanpa adanya level teknis jelas sebagai acuan keluar. Durasi ultra-pendek mengindikasikan *scalping* tanpa manajemen risiko terstruktur.\n\n**2) Yang Benar dari Setup**\n- **Ukuran Lot (0.05):** Konservatif. Kerugian net **-1.0 USD** sangat kecil, menunjukkan *position sizing* aman untuk modal standar (misal $500–$1k). Ini mencegah *blow-up* akun meski eksekusi buruk.\n- **Kecepatan Reaksi:** Menutup di bawah 3 menit membatasi *drawdown* maksimal (hanya 20 poin), jauh lebih baik daripada *averaging down* atau *moving SL* yang memperbesar risiko.\n\n**3) Satu Perbaikan Konkret**\n**Wajib set Hard Stop Loss (SL) fisik di server broker SEBELUM/SAAT entry.**\n*   *Contoh:* Tentukan invalidasi setup (misal: di bawah swing low terdekat atau 1.5x ATR 1M ≈ 30–40 poin). Pasang SL di level tersebut.\n*   *Alasan:* Menghilangkan keputusan emosional di detik-detik kritis, memastikan *risk:reward* terdefinisi, dan mencegah *slippage* besar saat volatilitas tinggi (news/opening bell). Tanpa SL, ini bukan trading tapi ber",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 01:28:28",
+  "hasil": "SL/manual-loss"
+ },
+ "2814300889": {
+  "evaluasi": "**Analisis Trade USTECm BUY 0.05 Lot**\n\n**1. Penyebab Manual Close (Loss -0.97 USD)**\nTrade ditutup manual setelah **2.7 menit** dengan kerugian 19.36 poin (≈ $0.97). Karena SL/TP = 0.0, ini **bukan hit SL sistem**, melainkan *discretionary exit*. Kemungkinan besar: (a) **Reaksi emosional/panic** melihat harga bergerak cepat melawan posisi (Nasdaq volatil), (b) **Setup entry tidak valid** (misal: *chase* breakout palsu / *fakeout* di timeframe rendah), atau (c) **Manajemen risiko mental gagal**—tidak tahan melihat *floating loss* kecil meski *setup* awal belum *invalid*.\n\n**2. Apa yang Benar dari Setup Ini**\n- **Ukuran Lot Konservatif:** 0.05 lot pada akun standar membuat risiko per poin kecil ($0.05/poin), sehingga kerugian absolut ($0.97) sangat terkontrol & tidak merusak *equity*.\n- **Durasi Singkat (Scalping):** Meminimalkan *exposure* risiko *overnight/gap* & *spread widening*.\n- **Disiplin Cut Loss Cepat:** Meskipun manual, Anda menerima kerugian kecil (<1%) daripada berharap harga balik (*hope trading*). Ini modal psikologis utama.\n\n**3. Satu Perbaikan Konkret: **Tetapkan **Hard Stop Loss (SL) Fisik** sebelum/sekali klik *Buy*.**\n*   **Alasan:** Tanpa SL, keputusan *exit* jadi emosional & inkonsisten. SL otomatis memaksa *risk-defined trade* (R:R jelas) & mengeluarkan emosi dari persamaan.\n*   **Cara:** Tentukan *invalidasi setup* teknikal (misal: di bawah *swing low* terdekat /",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 01:32:44",
+  "hasil": "SL/manual-loss"
+ },
+ "2814341403": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot (TP Hit)**\n\n**1. Penyebab Hit TP**\nHarga bergerak naik **+1000 poin (10 USD/0.01 lot)** dari *entry* 4100.96 ke TP 4110.96 dalam ~2 jam 13 menit. Pergerakan cepat ini didorong *momentum* bullish intraday yang kuat, kemungkinan besar dipicu oleh **breakout struktur resistensi lokal** atau reaksi fundamental (misal: data US melemah/USDJPY turun) yang mendorong *safe-haven demand*. *Trailing* tidak terpakai karena harga lurus ke target tanpa *pullback* signifikan ke area SL (4095.96).\n\n**2. Aspek Benar dari Setup**\n*   **Risk:Reward 1:2 Ideal:** Jarak SL (500 poin) vs TP (1000 poin) memberikan *edge* matematis; *winrate* >33% sudah *profitable* jangka panjang.\n*   **Manajemen Risiko Ketat:** Resiko **0.5 USD (50 poin x 0.01 lot)** sangat kecil relatif *account* (asumsi standar), menjaga *longevity* modal.\n*   **Disiplin Eksekusi:** Trade dibiarkan berjalan sesuai rencana tanpa intervensi emosional (tidak *move SL to BE* terlalu cepat yang sering *stop out* di *noise*).\n\n**3. Satu Perbaikan Konkret**\n**Implementasikan *Partial Take Profit* (50% di 1:1 / 500 poin, sisanya *trailing* atau *runner*).**\n*Alasan:* Durasi 133 menit untuk 1:2 *swing* intraday relatif cepat. Mengunci 50% di level 1:1 (4105.96) mengamankan *breakeven* mental & real, mengurangi tekanan *give back* profit jika terjadi *reversal* tiba-tiba (sering terjadi di XAU), sambil biarkan sisa *",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 05:47:10",
+  "hasil": "TP"
+ },
+ "2814363388": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot**\n\n**1. Penyebab Manual-Close (Bukan SL/TP Murni)**\nSL dan TP tercatat **0.0**, artinya tidak ada *pending order* proteksi saat entry. Harga turun **500 poin (50 pip / $5)** dalam **3.9 menit** — gerakan sangat cepat (≈128 pip/menit), khas *news spike* (misal NFP/CPI) atau *liquidity sweep* sesi New York. Karena tidak ada SL, kerugian tidak terbatas; *manual close* dilakukan panik/terpaksa saat *drawdown* melebihi toleransi mental, bukan karena *setup* invalid.\n\n**2. Yang Benar dari Setup**\n- **Ukuran Lot (0.01):** Sangat konservatif untuk modal kecil; kerugian $5 (≈0.5–1% equity) aman secara *risk management* kuantitatif.\n- **Disiplin *Cut Loss* Cepat:** Menutup di 3.9 menit mencegah *floating loss* jadi *margin call* (bisa >$50 jika *hold* tanpa SL). Ini satu-satunya keputusan benar di tengah kekacauan.\n\n**3. Satu Perbaikan Konkret: Wajib Set SL Fisik Sebelum Entry**\nPasang **Stop Loss *hard* di server broker** (bukan mental) **sebelum/sekaligus klik Buy**. Untuk XAUUSD *scalping* 1–5 menit, gunakan SL **150–250 poin (15–25 pip / $1.5–2.5)** di bawah *swing low* terdekat atau *order block* 1M/5M. Tanpa SL fisik, Anda berjudi bukan trading; *spread widening* saat *news* bisa *slippage* jauh melebihi $5.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 06:07:12",
+  "hasil": "SL/manual-loss"
+ },
+ "2814375892": {
+  "evaluasi": "**1. Kenapa Hit SL**  \nHarga bergerak **100 poin (≈$5) melawan arah",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 07:07:24",
+  "hasil": "SL"
+ },
+ "2814373729": {
+  "evaluasi": "**Analisis Trade XAUUSDm SELL 0.01 Lot**\n\n**1. Penyebab Hit SL**\nHarga bergerak naik **500 poin (50 pip) dalam 11,9 menit** dari entry 4106.044 ke SL 4111.044. Kecepatan gerakan ini mengindikasikan **volatilitas news tinggi (NFP, CPI, FOMC, atau data PMI)** atau *liquidity grab* di atas *swing high* terdekat. Entry dilakukan tepat di awal ledakan volatilitas tanpa menunggu konfirmasi penolakan harga (rejection candle",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 07:12:19",
+  "hasil": "SL"
+ },
+ "2814487486": {
+  "evaluasi": "**Analis Trade XAUUSDm BUY 0.01 Lot (TP Hit)**\n\n**1. Penyebab Hit TP**\nPergerakan naik **+1050 poin (105 pip) dalam 35,6 menit** menunjukkan ledakan volatilitas ekstrem (mungkin *news* CPI/FOMC/NFP atau *breakout* struktur *Asian/London session*). Harga bergerak lurus ke TP tanpa *pullback* signifikan, menandakan *momentum* beli sangat agresif (*impulsive wave*) dan *liquidity* di atas harga *open* tersedot cepat.\n\n**2. Apa yang Benar (Strengths)**\n*   **Risk:Reward Superior (1:2.33):** Risiko 450 poin (SL) vs Reward 1050 poin (TP). Matematis, *win rate* hanya butuh ~30% untuk *break-even*.\n*   **Eksekusi Disiplin:** *Position sizing* 0.01 lot konservatif (risiko ~$4.5), cocok untuk manajemen modal kecil. Tidak ada *averaging down* atau *moving SL* emosional.\n*   *Entry",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 09:22:28",
+  "hasil": "TP"
+ },
+ "2814524531": {
+  "evaluasi": "**Analis Trade XAUUSDm BUY 0.01 Lot (TP Hit)**\n\n**1) Penyebab Hit TP**\nPergerakan **+1000 pip ($10) dalam 22,9 menit** menunjukkan eksekusi saat **impuls volatilitas tinggi** (kemungkinan besar *news breakout* NFP/CPI/FOMC atau *London/NY Open* breakout). Harga bergerak lurus ke arah TP tanpa *pullback* signifikan yang menguji SL (-500 pip), menandakan *momentum* sangat kuat dan *entry* tepat di awal gerakan impulsif.\n\n**2) Yang Benar dari Setup**\n- **Risk:Reward 1:2** (SL 500 pip vs TP 1000 pip) matematis menguntungkan jangka panjang.\n- **Entry timing presisi tinggi**: Masuk di awal *momentum",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 09:52:25",
+  "hasil": "TP"
+ },
+ "2814583701": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot**\n\n**1. Penyebab Hit SL**\nHarga turun **48.5 poin (4.846 pip)** dari entry (4147.651) ke SL (4142.805) dalam **39 menit**, menunjukkan tekan",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 11:12:22",
+  "hasil": "SL"
+ },
+ "2814645294": {
+  "evaluasi": "**Analisis Trade BTCUSDm SELL 0.05 Lot (Durasi 5.9 Menit, TP Hit)**\n\n**1. Penyebab Hit TP**\nPergerakan turun 195 poin (~$9.76) dalam <6 menit menunjukkan **momentum jual agresif (impulsif)**, kemungkinan dipicu *breakdown* struktur *short-term* (misal: *break* *support* lokal, *order block* bearish, atau *liquidity sweep* di *low* sebelumnya). Harga bergerak lurus ke TP tanpa *pullback* signifikan, menandakan *seller* mendominasi *order flow* secara instan (mungkin *news-driven* atau *algo execution*).\n\n**2. Aspek Benar dari Setup**\n*   **Risk:Reward Superior (1:1.86):** Jarak SL 104.7 po",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 12:17:19",
+  "hasil": "TP"
+ },
+ "2814616019": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot (Durasi 65 Menit, Hasil SL -$5)**\n\n**1. Penyebab Hit SL**\nHarga turun **500 poin (50 pip)** dari entry 4146.467 ke SL 4141.467 dalam 65 menit (~7.7 pip/menit). Gerakan ini menunjukkan **tekanan jual dominan (bearish momentum)** atau **volatilitas tinggi** (mungkin terpicu news/US session open) yang langsung menembus struktur support dekat entry. Entry terlalu awal (\"chasing\") tanpa konfirmasi reversal/break of structure (BOS) di timeframe rendah (M5/M15), sehingga posisi langsung tersandung *noise* koreksi.\n\n**2",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 12:27:16",
+  "hasil": "SL"
+ },
+ "2814728254": {
+  "evaluasi": "The user wants a trading analysis in Indonesian, max 300 words, covering 3 specific points based on the provided trade data.\nTrade Data:\n- Symbol: BTCUSDm\n- Direction: SELL\n- Size: 0.05 lot\n- Open: 80869.14\n- Close: 80701.97\n- SL: 80969.14 (100 points/pips away)\n- TP: 80669.14 (200 points/pips away)\n- Net Profit: 8.36 USD\n- Duration: 4.5 minutes\n- Result: TP Hit\n\nCalculations:\n- Risk (SL distance): 80969.14 - 80869.14 = 100 points.\n- Reward (TP distance): 80869.14 - 80669.14 = 200 points.\n- R:R = 1:2.\n- Actual exit: 80701.97. TP was 80669.14. Price went *past* TP (lower for a sell), so TP hit correctly.\n- Profit check: (80869.14 - 80701.97) * 0.05 * 100 (assuming standard BTC contract size $1 per point per lot? Wait, usually BTCUSDm on MT5 is $1 per 0.01 lot per $1 move? Or $0.10 per point per 0.01 lot? Let's check standard contract specs. Usually 1 lot = 1 BTC. 0.05 lot = 0.05 BTC. Move = 167.17 points. 167.17 * 0.05 = 8.3585 USD. Matches net profit 8.36 USD. Contract size confirmed: 1 lot = 1 BTC, tick value $0.01 per 0.01 lot? No, 1 lot = 1 BTC. Point value = $1 per lot per $1 price change. So 0.05 lot * 167.17 = $8.35. Correct.)\n\nAnalysis Points:\n1. Why TP hit: Strong bearish momentum, likely breakdown of key level (support/resistance flip, order block, liquidity sweep). 4.5 mins for 167 points on BTC is very fast (high volatility/volume).\n2. What was right: Risk Management (1:2 R:R), Discipline (stuck to plan), Timing (caught impulsive move",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 13:52:25",
+  "hasil": "TP"
+ },
+ "2814736674": {
+  "evaluasi": "Berikut adalah analisis trading XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nPosisi terkena *Stop Loss* karena harga bergerak berlawanan arah (naik) segera setelah entri. Kenaikan sekitar 4.95 poin dalam waktu singkat (8.7 menit) menunjukkan adanya momentum *bullish* kuat atau volatilitas tinggi yang memicu *stop hunt* sebelum harga berpotensi berbalik.\n\n**2. Hal yang Benar dari Setup**\n*   **Manajemen Risiko:** Anda disiplin menggunakan SL dan menjaga ukuran lot kecil (0.01), sehingga kerugian terkendali dan tidak mengganggu ekuitas akun secara signifikan.\n*   **Risk-to-Reward Ratio:** Target TP (10 poin) dua kali lebih besar dari jarak SL (5 poin), yang secara matematis adalah strategi yang sehat untuk jangka panjang.\n\n**3. Perbaikan Konkret**\n**Perlebar jarak SL atau tunggu konfirmasi *rejection*.** Jarak SL 5 poin pada emas terlalu sempit dan rentan terkena *noise* pasar (volatilitas harian). Untuk trade berikutnya, letakkan SL di atas *Swing High* terdekat atau gunakan indikator ATR (*Average True Range*) untuk menentukan jarak SL yang lebih logis sesuai volatilitas saat itu.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 14:12:09",
+  "hasil": "SL"
+ },
+ "2814757358": {
+  "evaluasi": "Berikut adalah analisis trading Anda:\n\n**1. Penyebab Hit SL**\nPosisi terkena SL karena terjadi **lonjakan harga (spike) cepat** ke arah berlawanan. Dengan durasi hanya 3,5 menit, Anda terjebak dalam volatilitas jangka pendek atau momentum *bullish* kuat yang langsung menghantam batas risiko Anda tanpa memberi ruang napas bagi harga untuk koreksi.\n\n**2. Hal yang Benar dari Setup**\n**Manajemen Risiko (Risk Management).** Anda menggunakan lot kecil (0.01) dan menetapkan SL yang jelas sejak awal. Kerugian terukur sebesar -5.0 USD menunjukkan Anda disiplin dalam membatasi risiko per trade, sehingga akun Anda tetap aman meskipun prediksi salah.\n\n**3. Perbaikan Konkret**\n**Evaluasi Penempatan SL & Timing.** Jangan meletakkan SL terlalu ketat tepat di area *resistance* atau saat volatilitas tinggi (misal: menjelang berita ekonomi). Berikan **ruang (buffer)** beberapa pips di atas level kunci untuk menghindari *stop-hunt* atau fluktuasi harga sementara sebelum harga bergerak sesuai prediksi.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 14:27:09",
+  "hasil": "SL"
+ },
+ "2814840741": {
+  "evaluasi": "Berikut adalah analisis trading BTCUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga mengalami koreksi jangka pendek atau *retracement* tepat setelah entry. Jarak SL Anda terlalu ketat (hanya 100 poin/1 USD dari harga open), sehingga tidak memberikan ruang bagi volatilitas alami Bitcoin untuk bergerak sebelum melanjutkan tren naik.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Penggunaan SL yang disiplin mencegah kerugian besar.\n*   **Risk-to-Reward Ratio:** Target TP (200 poin) adalah dua kali lipat dari risiko SL (100 poin), menunjukkan rasio 1:2 yang sehat secara matematis.\n\n**3. Perbaikan Konkret**\n**Lebarkan jarak SL berdasarkan ATR (*Average True Range*).** Jangan menggunakan angka bulat atau jarak yang terlalu sempit. Untuk BTC, letakkan SL di bawah *swing low* terdekat atau gunakan minimal 1.5x - 2x nilai ATR agar tidak terkena *market noise* (gejolak harga kecil) sebelum harga mencapai TP.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 17:12:09",
+  "hasil": "SL"
+ },
+ "2814943563": {
+  "evaluasi": "**Analis Trading: BTCUSDm SELL 0.05 Lot (SL Hit)**",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 18:42:31",
+  "hasil": "SL"
+ },
+ "2814890807": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot**\n\n**1) Penyebab Hit SL**\nHarga open `4154.12` turun hingga menyentuh SL di `4149.261` (jarak **48.6 pip / $4.86**), mengonfirmasi SL terekseskusi secara otomatis (bukan manual close). Durasi 127 menit menunjukkan trade gagal bertahan di zona support intraday. Penyebab utamanya: **entry dilakukan di tengah konsolidasi/range tanpa konfirmasi arah**, sehingga rentan terhadap *noise* dan *stop hunt* sesi Asia/Eropa awal. Spread XAUUSDm yang relatif lebar di jam sepi memperparah *slippage* virtual.\n\n**2) Apa yang Benar dari Setup**\n*   **Risk Management:** RRR 1:2 (SL 48.6 pip, TP 101.4 pip) matematis solid.\n*   **Position Sizing:** 0.01 lot menghasilkan risiko ~$4.86 (asumsi equity $500–$1k = <1% risko), sangat disiplin.\n*   **Eksekusi Plan:** SL/TP diset sejak awal (*set & forget*), menghilangkan emosi saat trade berjalan.\n\n**3) Satu Perbaikan Konkret**\n**Jangan entry *limit/market* di tengah range.** Tunggu **breakout & retest struktur 15M/1H** (misal: close di atas *swing high* lokal lalu pullback ke *order block* / *FVG* baru) sebelum BUY. Atau, geser entry ke **4150.50–4151.00** (dekat low range) dengan SL di bawah *swing low* signifikan (misal 4147.50) untuk memperbaiki *risk-reward* real dan menghindari *liquidity grab* di tepi range.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 19:02:25",
+  "hasil": "SL"
+ },
+ "2814965875": {
+  "evaluasi": "**Analis Trade BTCUSDm SELL 0.05 Lot (Durasi 9.3 Menit, TP Hit)**\n\n**1. Penyebab Hit TP**\nPergerakan turun **209 poin (≈$10.47)** dalam 9,3 menit menunjukkan **ekspansi volatilitas tiba-tiba (impulse wave)**, kemungkinan dipicu *sweep liquidity* di atas *swing high* terdekat (mencari SL Buy/Stop Loss cluster) diikuti agresi *market sell* besar (institusional/algo). Harga bergerak lurus ke TP tanpa *pullback* signifikan, menandakan *momentum* *seller* sangat dominan di *timeframe* rendah (M1/M5).\n\n**2. Aspek",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 19:12:15",
+  "hasil": "TP"
+ },
+ "2814990156": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot**\n\n**1. Penyebab Hit SL**\nHarga terbuka di **4151.923** dan SL ditempatkan di **4146.92** (jarak ~500 poin/$5). Durasi hanya **11.2 menit** menunjukkan volatilitas tinggi (gerakan ~50 poin/menit). SL tertembak karena harga langsung bergerak turun tajam (*bearish impulse* atau *sweep liquidity*) setelah entry, tanpa *pullback* ke arah TP. Entry kemungkinan besar dilakukan di area *resistance* atau *breakout* palsu (*fakeout*) di timeframe rendah (M1/M5) tanpa konfirmasi struktur *bullish* yang valid.\n\n**2. Yang Benar dari Setup**\n- **Risk Management Kuat:** Risk $5 (0.5% dari equity $1k) sangat disiplin dan aman.\n- **Risk:Reward Rasional:** RR 1:2 (SL 500 poin, TP 1000 poin) matematis menguntungkan jangka panjang.\n- **Eksekusi Cepat:** Durasi singkat membebaskan margin dan menghindari risiko *overnight*/news tiba-tiba.\n\n**3. Satu Perbaikan Konkret**\n**Tambahkan filter entry berbasis struktur (M15/H1) + trigger M5.** Jangan buy hanya karena harga turun ke *support* M1. Tunggu harga **break & retest struktur *bearish* di M15/H1 menjadi *bullish* (CHoCH/BOS)**, lalu cari entry di *order block* atau *FVG* M5 arah *bullish* tersebut. Ini memfilter *fakeout* dan memastikan *momentum* institusi mendukung arah trade sebelum SL diletakkan.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 19:37:26",
+  "hasil": "SL"
+ },
+ "2815060824": {
+  "evaluasi": "Berikut adalah analisis trading BTCUSDm Anda:\n\n**1. Penyebab Profit**\nPosisi ditutup secara **manual-profit** tepat sebelum menyentuh TP (selisih ~40 poin). Hal ini menunjukkan Anda melakukan *exit* dini untuk mengamankan keuntungan saat harga sudah mendekati target, menghindari risiko *rebound* mendadak di area support.\n\n**2. Kelebihan Setup**\n*   **Risk-to-Reward (RR) Ideal:** Jarak SL (~96 poin) dan TP (~74 poin) cukup proporsional dan terukur.\n*   **Efisiensi Waktu:** Durasi trade sangat singkat (6,1 menit), menandakan Anda berhasil menangkap momentum *scalping* yang tepat di area *overbought* atau *resistance*.\n*   **Eksekusi Disiplin:** Entry dilakukan dengan presisi sehingga harga langsung bergerak searah prediksi.\n\n**3. Perbaikan Konkret**\n**Optimalkan Manajemen Exit.** Jika strategi Anda adalah *scalping* cepat, pertimbangkan untuk menggunakan **Trailing Stop** atau memindahkan SL ke titik *Break Even* (BEP) setelah harga bergerak profit 50%. Ini memungkinkan Anda mengejar profit lebih besar jika terjadi *impulse move* tanpa risiko kehilangan modal.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 19:47:10",
+  "hasil": "TP/manual-profit"
+ },
+ "2815060031": {
+  "evaluasi": "The user wants a trading analysis in Indonesian, max 300 words, 3 specific points.\nTrade details:\n- Symbol: USTECm (Nasdaq 100)\n- Direction: SELL\n- Size: 0.05 lot\n- Open: 29653.15\n- Close: 29632.71\n- SL: 29753.4 (100 pts away)\n- TP: 29453.4 (200 pts away)\n- Net Profit: 1.02 USD\n- Duration: 9 minutes\n- Result: TP / manual-profit (closed at 29632.71, which is NOT the TP price of 29453.4).\n\nCalculations:\n- Entry to Close: 29653.15 - 29632.71 = 20.44 points profit.\n- 0.05 lot on USTECm usually = $0.50 per point (or $1 per point depending on broker contract spec, usually mini lot 0.1 = $1, so 0.05 = $0.50). 20.44 * 0.5 = $10.22? Wait, net is $1.02.\n- Let's check contract size. Standard USTEC (Nasdaq) often 1 lot = $20/point? No, usually CFD 1 lot = $1 or $20.\n- If Net = $1.02 for 20.44 points -> $1.02 / 20.44 = $0.05 per point. So 0.05 lot = $0.05/point? That implies 1 lot = $1/point. Standard for many CFD brokers (e.g., IC Markets, Pepperstone: 1 lot = $1/point for USTEC). So 0.05 lot = $0.05/point. 20.44 * 0.05 = $1.02. Matches perfectly.\n- RR Plan: SL 100 pts, TP 200 pts (1:2).\n- Actual RR: Risk 100 pts, Reward realized 20.44 pts (1:0.2). Very poor realized R.\n\nAnalysis Points:\n1. Why closed? Price hit 29632.71. TP was 29453.4 (200 pts down). Price only moved 20 pts. User says \"hasil TP/manual-profit\". Since close price != TP price, this was a **manual close** (early exit",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 19:57:21",
+  "hasil": "TP/manual-profit"
+ },
+ "2815097762": {
+  "evaluasi": "Berikut adalah analisis trading XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga bergerak berlawanan arah dengan posisi *Sell* segera setelah entri. Kenaikan 5 poin (50 pips) dalam waktu singkat (2,6 menit) menunjukkan adanya momentum *bullish* kuat atau volatilitas tinggi yang mendorong harga langsung menyentuh batas *Stop Loss*.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Penggunaan lot kecil (0.01) sangat tepat untuk menjaga risiko.\n*   **Risk-to-Reward Ratio:** Rasio 1:1 (SL 5 poin, TP 5 poin) terukur dan disiplin karena Anda tidak menggeser SL saat harga mendekat.\n\n**3. Perbaikan Konkret**\n**Perlebar jarak SL atau gunakan konfirmasi *Price Action*.** Jarak 5 poin pada XAUUSD terlalu sempit dan rentan terkena *market noise* (gejolak harga jangka pendek). Untuk trade berikutnya, analisis *Swing High/Low* terdekat untuk menentukan SL yang lebih logis, atau tunggu konfirmasi *candlestick reversal* di timeframe lebih kecil sebelum eksekusi agar entri lebih presisi.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 20:02:10",
+  "hasil": "SL"
+ },
+ "2815118454": {
+  "evaluasi": "Berikut adalah analisis singkat untuk trade XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga bergerak berlawanan arah dengan cepat segera setelah posisi dibuka. Dengan durasi hanya 0,9 menit, Anda terkena *spike* harga atau volatilitas tinggi yang memicu SL secara instan. Jarak SL yang terlalu ketat (hanya ~5 pips/50 poin) membuat posisi tidak memiliki \"ruang bernapas\" terhadap fluktuasi normal emas.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Penggunaan lot kecil (0.01) sangat tepat untuk menjaga akun dari risiko besar.\n*   **Disiplin:** Anda memasang SL dan TP secara terukur (Risk:Reward 1:1), menunjukkan adanya rencana trading yang jelas sebelum eksekusi.\n\n**3. Perbaikan Konkret**\n**Perlebar jarak Stop Loss.** Emas memiliki volatilitas tinggi; SL sebesar 5 pips terlalu berisiko terkena *noise* pasar. Gunakan indikator **ATR (Average True Range)** untuk menentukan jarak SL yang ideal berdasarkan volatilitas saat itu, atau minimal beri jarak 20-30 pips agar posisi tidak mudah terhenti oleh koreksi kecil.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 20:17:09",
+  "hasil": "SL"
+ },
+ "2815185657": {
+  "evaluasi": "Berikut adalah analisis singkat untuk trade BTCUSDm Anda:\n\n**1. Penyebab Hit SL**\nAnda melakukan *counter-trend* (Sell) saat harga sedang dalam momentum bullish kuat. Jarak SL terlalu ketat (hanya sekitar 96 poin/0.12%), sehingga harga dengan mudah menyentuh SL akibat volatilitas normal BTC sebelum sempat bergerak turun.\n\n**2. Hal yang Benar dari Setup**\nKedisiplinan dalam memasang Stop Loss (SL). Anda tidak membiarkan floating loss membengkak, sehingga risiko terukur dan kerugian tetap kecil (-4.82 USD).\n\n**3. Perbaikan Konkret**\n**Perlebar jarak SL dan gunakan konfirmasi *Price Action*.** Jangan melakukan Sell hanya berdasarkan angka, tetapi tunggu terbentuknya pola *reversal* (seperti *Bearish Engulfing* atau *Pin Bar*) di area Resistance pada timeframe M15 atau H1 untuk memastikan momentum sudah benar-benar berbalik.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 20:47:07",
+  "hasil": "SL"
+ },
+ "2815089537": {
+  "evaluasi": "Berikut adalah analisis trading Anda:\n\n**1. Penyebab Hit TP**\nHarga mengalami penurunan tajam sebesar kurang lebih 200 poin dalam waktu singkat (65 menit). Hal ini mengindikasikan adanya momentum *bearish* yang kuat atau reaksi terhadap rilis data ekonomi/sentimen negatif yang mendorong indeks Nasdaq (USTEC) turun cepat menuju target profit Anda.\n\n**2. Kelebihan Setup**\n*   **Risk-to-Reward Ratio (RRR) Ideal:** Anda menggunakan rasio 1:1 (SL 100 poin, TP 100 poin). Ini adalah manajemen risiko yang disiplin dan terukur.\n*   **Eksekusi Tepat Waktu:** Durasi 65 menit menunjukkan Anda berhasil menangkap *swing* jangka pendek (scalping/day trading) dengan efisien tanpa membiarkan posisi terbuka terlalu lama (*overholding*).\n\n**3. Perbaikan Konkret**\n**Optimalkan RRR menjadi 1:2.** Mengingat USTEC memiliki volatilitas tinggi, target 100 poin seringkali terlalu konservatif. Untuk trade berikutnya, coba geser TP ke 200 poin (atau gunakan *Trailing Stop* setelah profit 100 poin) untuk memaksimalkan keuntungan saat terjadi momentum kuat, sementara SL tetap dijaga di 100 poin.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 21:02:09",
+  "hasil": "TP"
+ },
+ "2815197383": {
+  "evaluasi": "Berikut adalah analisis singkat untuk trade XAUUSDm Anda:\n\n**1. Penyebab Hit SL**\nHarga mengalami koreksi/penurunan sebesar 5 poin (50 pips) segera setelah posisi dibuka, sehingga menyentuh level Stop Loss (SL) sebelum sempat bergerak menuju Target Profit (TP). Hal ini mengindikasikan adanya tekanan jual jangka pendek atau Anda melakukan *entry* tepat di area *resistance* lokal.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Penggunaan lot kecil (0.01) sangat tepat untuk menjaga akun dari risiko besar.\n*   **Risk-to-Reward Ratio:** Rasio 1:2 (SL 5 poin, TP 10 poin) adalah standar trading yang sehat dan disiplin.\n*   **Eksekusi:** Anda memiliki rencana yang jelas (SL dan TP terpasang) sejak awal.\n\n**3. Perbaikan Konkret**\n**Evaluasi Titik Entry.** Jangan melakukan *Buy* saat harga sudah terlalu tinggi atau di tengah momentum turun. Gunakan indikator (seperti RSI atau Support/Resistance) untuk mencari area *Buy* di harga yang lebih rendah (diskon) agar jarak SL lebih aman dan probabilitas pantulan harga lebih tinggi.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 21:12:08",
+  "hasil": "SL"
+ },
+ "2815214347": {
+  "evaluasi": "Berikut adalah analisis trading Anda:\n\n**1. Penyebab Hit SL**\nPosisi terkena *Stop Loss* karena terjadi lonjakan harga (*spike*) cepat ke atas segera setelah entri. Durasi trade yang sangat singkat (0,6 menit) menunjukkan Anda masuk saat momentum *bullish* sedang kuat atau terjadi *fakeout* di area resistance, sehingga harga langsung memantul naik sebelum sempat turun.\n\n**2. Hal yang Benar dari Setup**\n*   **Risk Management:** Anda disiplin menggunakan SL yang terukur.\n*   **Risk-to-Reward Ratio:** Target profit (TP) sebesar 200 pips dengan risiko (SL) 101 pips menunjukkan rasio RR yang sehat (sekitar 1:2).\n\n**3. Perbaikan Konkret**\n**Konfirmasi Entry.** Jangan melakukan *sell* hanya berdasarkan level harga, tetapi tunggu konfirmasi *candlestick* (seperti *Bearish Engulfing* atau *Pin Bar*) di timeframe rendah (M1/M5) untuk memastikan momentum sudah berbalik arah. Hindari \"menangkap pisau jatuh\" saat harga sedang naik kencang.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-15 21:22:08",
+  "hasil": "SL"
+ },
+ "2815231195": {
+  "evaluasi": "**1. Kenapa Hit SL**\nHarga bergerak naik **+102,5 poin** dalam 25 menit (volatilitas ~4,1 poin/menit), menembus SL di 29702,65. Entry di 29600,15 kemungkinan besar **terlalu awal/mencoba \"menangkap",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 21:42:15",
+  "hasil": "SL"
+ },
+ "2815238010": {
+  "evaluasi": "**Analis Trade XAUUSDm BUY 0.01 Lot (Durasi 17.1 Menit, TP Hit)**\n\n**1. Penyebab Hit TP: Momentum Breakout Ekstrem**\nHarga bergerak **+1000 poin (100 pip) dalam 17 menit** (~5.8 pip/menit). Kecepatan ini mengindikasikan **breakout fundamental/li",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 21:42:36",
+  "hasil": "TP"
+ },
+ "2815271151": {
+  "evaluasi": "**Analisis Trade XAUUSDm BUY 0.01 Lot (Durasi 51.5 Menit, Hasil SL)**\n\n**1. Penyebab Hit SL**\nHarga terbuka di **4154.718** dan SL ditempatkan di **4149.884** (jarak **48.3 pip / ~$4.83**, konsisten dengan loss -$4.84). Dalam durasi singkat **51.5 menit**, harga turun **~48 pip** tanpa pullback signifikan ke arah TP (4164.884, jarak 101.6 pip). Ini mengindikasikan **breakdown momentum bearish tajam** (mungkin trigger news USD, data ekonomi, atau break struktur support M5/M15) yang langsung menyentuh level invalidasi setup Anda. Eksekusi SL berfungsi normal (bukan manual close), melindungi equity dari kerugian lebih besar.\n\n**2. Yang Benar dari Setup**\n*   **Risk Management Teraplikasi Baik:** RRR **1:2.1** (SL ~48 pip, TP ~102 pip) ideal. Position sizing 0.01 lot menjaga risiko ~$5 (asumsi equity $500–$1k = 0.5–1% risk), sangat disiplin.\n*   **Disiplin Eksekusi:** Tidak memindahkan SL (widened) saat harga bergerak lawan, mencegah kerugian melonjak.\n*   **Struktur Trade Jelas:** Memiliki entry, SL, TP tetap sebelum masuk pasar.\n\n**3. Satu Perbaikan Konkret: Filter Konteks HTF & Volatilitas**\nSebelum entry, **wajib cek trend H1/H4 & kalender ekonomi**. Jika H1 bearish (lower low/high) atau ada news high-impact (NFP, CPI, FOMC) dalam 1–2 jam, **jangan entry BUY** meski setup M5/M1",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-15 22:42:35",
+  "hasil": "SL"
+ },
+ "2815456445": {
+  "evaluasi": "Trade tersentuh SL karena harga turun 99 poin dari entry hingga 29839.02 dalam 71,8 menit, menunjukkan momentum bearish dominan yang menembus support intraday; sisi positifnya risk management sudah tepat dengan risk:reward 1:2 dan ukuran lot 0.05 lot menjaga kerugian hanya -4.95 USD. Perbaikan konkret: tunggu konfirmasi reversal di timeframe 15 menit seperti break struktur atau bullish engulfing di zona demand sebelum entry, jangan menembak limit order di tengah konsolidasi tanpa trigger price action.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:52:40",
+  "hasil": "SL"
+ },
+ "2815417527": {
+  "evaluasi": "Trade menyentuh TP 82370.81 karena momentum bullish sesi Asia memecah resistensi intraday 82200 dengan volume naik, validasi arah benar terlihat dari risk-reward 1:2 yang terealisasi penuh dan SL 82070.81 tidak tersentuh menandakan struktur harga dihormati, namun durasi 23 menit terlalu cepat mengindikasikan exit terlalu konservatif; perbaikan konkret: geser TP parsial ke 82500 (R:R 1:3) sambil trail SL ke breakeven setelah harga menembus 82250 untuk mengoptimalkan capture tren tanpa menambah risiko.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:52:54",
+  "hasil": "TP"
+ },
+ "2815521805": {
+  "evaluasi": "Trade ini hit TP karena momentum bearish kuat mendorong harga menembus level 4147.234 hanya dalam 26,5 menit, membuktikan setup entry di 4156.946 tepat sasaran di zona supply dengan risk-reward 1:1,6 yang valid; yang benar adalah pemilihan SL di 4162.234 yang memberikan ruang napas cukup di atas high lokal tanpa terlalu lebar. Perbaikan konkret: geser TP parsial ke 4152 (R:R 1:1) untuk mengunci profit awal dan biarkan sisa lot berjalan dengan trailing stop agar menangkap pergerakan lebih jauh jika tren berlanjut.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:53:11",
+  "hasil": "TP"
+ },
+ "2815357946": {
+  "evaluasi": "Trade menyentuh TP 29980.01 karena momentum naik berlanjut menembus resistensi psikologis 29900 hingga target tercapai dalam 176,8 menit dengan RR 1:2 yang disiplin; yang benar adalah pemilihan level SL di bawah support 29700 dan ukuran lot 0,05 yang menjaga risiko tetap kecil. Perbaikan konkret: geser TP parsial ke 29930 untuk mengunci sebagian profit lalu biarkan sisa berjalan dengan trailing stop agar menangkap pergerakan lanjutan di atas 30000.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:53:23",
+  "hasil": "TP"
+ },
+ "2815364944": {
+  "evaluasi": "Trade ini kena SL karena harga mendorong naik melewati level 4155.671 setelah konsolidasi singkat, menandakan tekanan beli dominan di zona supply yang diuji; setup benar pada pemilihan arah sell sesuai tren menurun H1 dan risk-reward 1:1 yang proporsional, namun entry terlalu agresif di tepi atas range tanpa menunggu konfirmasi penolakan (seperti bearish engulfing di M15) sehingga rentan false breakout; perbaikan konkret: tunggu candle M15 close di bawah struktur support minor baru masuk sell limit dengan SL di atas high swing terakhir.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:53:42",
+  "hasil": "SL"
+ },
+ "2815517540": {
+  "evaluasi": "Trade menyentuh TP 82424.35 karena momentum naik kuat di timeframe menit mendorong harga melewati resistance intraday hanya dalam 12,6 menit, membuktikan setup breakout dengan risk-reward 1:1,7 (SL 113 poin, TP 187 poin) dan eksekusi entry tepat di level 82237,42 berfungsi optimal; perbaikan konkret: geser TP parsial ke 82350 untuk mengunci profit minimal 1:1 lalu biarkan sisa lot mengejar ekstensi dengan trailing stop agar menangkap gerakan lebih besar tanpa risiko give-back saat volatilitas tiba-tiba turun.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 08:54:51",
+  "hasil": "TP"
+ },
+ "2815562132": {
+  "evaluasi": "Posisi kena SL karena harga bergerak naik tajam 500 pip dalam 26 menit menembus level 4159.298, kemungkinan besar dipicu news volatilitas tinggi yang mengabaikan struktur bearish; setup benar pada risk management ketat (RR 1:1, lot 0.01, risiko $5) dan penempatan SL di atas swing high lokal; perbaikan konkret: tambahkan filter news high-impact (NFP/CPI/FOMC) dan jangan entry SELL 15 menit sebelum rilis berita fundamental emas.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 09:25:09",
+  "hasil": "SL"
+ },
+ "2815501052": {
+  "evaluasi": "Posisi kena SL karena harga naik 99.5 poin menembus resistance jangka pendek di 29948.13, menunjukkan momentum bearish gagal bertahan di level entry; yang benar dari setup ini adalah risk:reward 1:2 yang proporsional serta penempatan SL di atas struktur swing high terakhir yang valid secara teknikal; perbaikan konkret: tunggu konfirmasi penolakan (seperti bearish engulfing di M15) di zona supply 29900-29950 sebelum entry, jangan limit order buta di tengah range.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 09:36:12",
+  "hasil": "SL"
+ },
+ "2815641671": {
+  "evaluasi": "Trade ini hit TP karena momentum bullish XAUUSD sangat kuat mendorong harga naik 1000 pip (10 USD) hanya dalam 11,8 menit, melewati target dengan cepat tanpa mengetest SL; yang benar dari setup adalah risk-reward 1:1 yang terealisasi sempurna dengan eksekusi presisi dan manajemen lot 0,01 yang konservatif menjaga keamanan modal; perbaikan konkret: gunakan trailing stop atau partial TP di 50% target untuk mengunci profit dan menangkap potensi pergerakan lanjutan jika breakout berlanjut.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 10:49:08",
+  "hasil": "TP"
+ },
+ "2815890945": {
+  "evaluasi": "Harga turun tajam melewati SL 82020.36 sebelum sempat menguji arah naik, memaksa keluar pada -5 USD meski analisis bias bullish dan risk-reward 1:1.5 sudah tepat; perbaikan konkret: geser SL ke breakeven (82111.9) setelah harga menyentuh 82200 untuk mengunci profit kecil dan menghindari kerugian penuh saat volatilitas tinggi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-16 16:44:24",
+  "hasil": "SL"
+ },
+ "2815875531": {
+  "evaluasi": "Posisi XAUUSDm mengalami loss karena harga bergerak berlawanan arah hingga menyentuh stop loss akibat volatilitas pasar yang tinggi. Setup ini sudah benar dalam hal manajemen risiko dengan penggunaan lot kecil dan penempatan SL yang terukur. Untuk trade berikutnya, perbaiki analisis entry dengan menunggu konfirmasi candlestick di area support yang lebih kuat guna menghindari koreksi harga yang terlalu dalam sebelum terjadi pembalikan arah.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-16 17:04:04",
+  "hasil": "SL"
+ },
+ "2815888630": {
+  "evaluasi": "Posisi USTECm mengalami loss karena harga bergerak berlawanan arah dan menyentuh stop loss akibat volatilitas pasar yang tinggi. Setup ini sudah benar dalam hal penempatan risiko yang terukur dengan rasio risk reward yang jelas. Untuk trade berikutnya, perbaiki titik entry dengan menunggu konfirmasi rejection pada area support yang lebih kuat guna menghindari floating minus yang terlalu dalam sebelum harga berbalik arah.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-16 17:10:04",
+  "hasil": "SL"
+ },
+ "2815986560": {
+  "evaluasi": "Posisi XAUUSDm mengalami kerugian karena harga bergerak melawan arah prediksi dan menyentuh stop loss akibat volatilitas pasar yang tinggi. Setup ini sudah benar dalam hal manajemen risiko dengan penggunaan lot kecil dan penempatan SL yang terukur. Untuk trade berikutnya, perbaikan konkret yang harus dilakukan adalah melakukan analisis timeframe yang lebih besar guna memastikan tren utama sebelum entry agar tidak terjebak dalam koreksi harga jangka pendek.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-16 17:55:04",
+  "hasil": "SL"
+ },
+ "2816036436": {
+  "evaluasi": "Posisi sell XAUUSDm mencapai TP karena harga bergerak turun mengikuti momentum bearish jangka pendek. Setup ini benar dalam menentukan arah tren dan penempatan target profit yang realistis sesuai struktur pasar. Namun, rasio risk to reward perlu diperbaiki dengan memperketat jarak stop loss agar potensi keuntungan jauh lebih besar daripada risiko kerugian pada perdagangan berikutnya.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-16 20:03:04",
+  "hasil": "TP"
+ },
+ "2816028994": {
+  "evaluasi": "Entry sell dilakukan saat harga mengalami koreksi naik setelah tren menurun jangka pendek, tepat di area resistansi lokal. Harga kemudian melanjutkan penurunan mengikuti struktur lower low yang konsisten hingga menyentuh target. Setup ini benar karena memanfaatkan momentum bearish yang kuat dan penempatan SL di atas swing high terakhir. Perbaikan untuk trade berikutnya adalah memperlebar jarak TP agar dapat menangkap penurunan lebih dalam mengingat volatilitas tinggi yang terjadi setelah exit.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-16 20:57:05",
+  "hasil": "TP"
+ },
+ "2816330456": {
+  "evaluasi": "Entry Buy 4184.5 terjadi di area resistance swing high 21:25 (4199.05) dan 21:55 (4189.19) setelah pullback ke support 4182, struktur naik masih valid namun momentum melemah terlihat dari lower high 22:05 (4186.56); SL 4179.28 diletakkan tepat di bawah swing low 22:10 (4179.90) sehingga risiko struktural benar, TP 4194.28 realistis mengacu high 21:30; hit SL karena breakout palsu di 22:10 yang menembus low 21:55 (4184.09) memicu koreksi tajam ke 4179.62; perbaikan: tunggu retest level 4182–4184 sebagai support baru dengan konfirmasi M5 close di atas 4186 sebelum entry.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 07:40:04",
+  "hasil": "SL"
+ },
+ "2816444194": {
+  "evaluasi": "Entry di 23:30 (81555.69) tepat di bawah swing high 23:25 (81573.91) dan resistance 23:20 (81567.83) memvalidasi bias bearish struktur turun dari puncak 21:15 (82272.71); TP tersentuh karena momentum penjualan kuat di 22:50–22:55 menembus support 81480 dan 81300 secara bertahap hingga menyentuh 81364.32, SL 81664.32 aman di atas high 23:10 (81504.09) dan 23:15 (81540.21) memberikan buffer 100+ poin; setup benar memanfaatkan pullback ke area supply fresh, perbaikan: tunggu konfirmasi penolakan di timeframe M1/M15 (misal break structure bearish) sebelum entry agar tidak terjebak konsolidasi lateral seperti 23:00–23:30.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 07:49:48",
+  "hasil": "TP"
+ },
+ "2816519460": {
+  "evaluasi": "Entry SELL 4163.572 dilakukan di area konsolidasi 23:55–00:55 WIB setelah breakdown 4161.114 namun posisi terlalu dekat dengan swing high lokal 4168.71 (02:25) sehingga SL 4168.572 mudah tersentuh saat pullback bullish 01:05–02:25; setup benar mengikuti bias bearish turunan dari puncak 4189.185 (21:55) dan TP 4153.572 logis menargetkan low 4156.637 (01:35), perbaikan: tunggu retest resistance 4165–4166 zona supply 00:45–01:15 dengan konfirmasi lower high M15 sebelum entry agar SL lebih aman di atas struktur swing terbaru.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 07:58:12",
+  "hasil": "SL"
+ },
+ "2816304778": {
+  "evaluasi": "Entry di 21:40 (29740.64) tepat di resistance swing high 21:35 (29749.39) setelah gagal breakout, memvalidasi bias bearish struktur lower high; SL 29793.72 aman di atas high signifikan 19:10 (29959.44) memberi ruang gerak wajar, TP 29643.72 presisi menyentuh zona demand 22:00 low (29633.14) dan low 20:55 (29626.64) sehingga tercapai dalam 20 menit; setup benar memanfaatkan rejection di supply zone M5. Perbaikan: geser entry ke retest 50% fibonacci penurunan 21:35-21:40 untuk memperbaiki risk-reward dan mengurangi drawdown floating.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 08:06:29",
+  "hasil": "TP"
+ },
+ "2816533071": {
+  "evaluasi": "The user wants a single paragraph in Indonesian, max 80 words, no markdown, no bold, no opening/closing sentences.\nRole: Technical Trading Analyst.\nData: BTCUSDm SELL 0.05 lot, Open 81227.55, Close 81327.55 (SL hit), SL 81327.55, TP 81027.55, Net -5 USD, Duration 5.5 mins.\nTape M5 data provided (O H L C).\nEntry time: 01:20 (based on 'E' marker at 01:20 candle).\nExit time: 01:20 candle high touched SL? Wait, SL is 81327.55. 01:20 High is 81328.38. Yes, SL hit within entry candle (01:20).\nStructure analysis needed: Price action structure, entry position vs swing high/low, SL/TP quality vs structure.\nConstraints: No candle pattern names. Must include: why SL hit, what was correct in setup, one concrete improvement. Max 80 words. One paragraph.\n\nAnalysis:\nEntry at 01:20 Open 81178.87 (approx 81227.55? Wait. Data says 01:20 Open 81178.87 High 81328.38 Low 81076.9 Close 81273.36. Entry price 81227.55 is inside this candle).\nSL 81327.55. High 01:20 is 81328.38. SL hit immediately in same candle.\nPrevious swing high: 00:30 High 81825.64 (spike?), 00:40 High 81710.89. Recent lower highs: 01:05 High 81224.91, 01:10 High 81258.69, 01:15 High 81290.55.\nEntry 81227.55 is near 01:05 High (81224.91) and below 01:15 High (81290.55).\nSL 81327.55 is just above 01:15 High (81290.55) and 01:10 High (81258.69). Actually 81327 is above recent swing highs.\nWait, 01:20 High 81328.38 made a new local high (higher than 01:15 81290).\nWhy SL hit: Entry taken during aggressive upside breakout/continuation within the 01:20 candle, SL placed too tight just above recent swing highs but price expanded violently (81178 -> 81328 in 5 mins).\nWhat was correct: Direction (Sell) aligned with broader downtrend from 00:30 high (81825) to 01:20 low (80735 earlier? No, 00:20 low 80735. 00:30 spike up. Then downtrend 00:30 high 81825 -> 01:15 low 81155). Actually trend was down from 00:30. Entry was a pullback sell.\nImprovement: Wait for lower timeframe confirmation (M1/M5 close) below structure or wider SL below volatility spike high.\n\nDrafting (Indonesian, < 80 words):\nEntry sell 81227 terjadi di tengah koreksi naik tajam candle 01:20 (high 81328), SL 81327 terlalu dekat di atas swing high lokal 01:15 (81290) sehingga langsung kena saat momentum breakout lanjutan. Arah sell benar mengikuti tren turun dari puncak 00:30 (81825) menuju low 01:15. Perbaikan: tunggu candle M5 close di bawah support pullback (misal 81155) atau gunakan SL",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 08:11:19",
+  "hasil": "SL"
+ },
+ "2816620566": {
+  "evaluasi": "Entry dilakukan saat harga terkoreksi di area konsolidasi, namun posisi terkena SL karena harga mengalami penurunan tajam yang menembus level support terendah harian. Setup ini benar dalam mengidentifikasi tren naik jangka menengah yang sempat membawa harga menuju 81600. Perbaikan konkret adalah menempatkan SL di bawah swing low terakhir yang lebih valid atau memperlebar jarak SL untuk menghindari noise volatilitas tinggi pada aset BTC.",
+  "model": "google/gemma-4-31b-it:free",
+  "updated": "2026-10-17 19:54:05",
+  "hasil": "SL"
+ },
+ "2816671073": {
+  "evaluasi": "The user wants a technical analysis of a specific BTCUSDm sell trade in Indonesian.\nConstraints:\n- Role: Technical Trading Analyst.\n- Language: Indonesian.\n- Format: ONE paragraph only.\n- Max length: 80 words.\n- No markdown/bold.\n- No opening/closing sentences (just the analysis).\n- Data provided: Trade details (Sell 0.05 lot, entry 81425.63, exit 81225.63, SL 81525.63, TP 81225.63, net +10 USD, duration ~145 min, result TP hit).\n- M5 Tape data (OHLC per 5 min WIB) with Entry (E) at 20:30 and Exit (X) at 22:50.\n- Analysis focus: Price action structure, entry position relative to swing high/low, SL/TP quality relative to structure.\n- FORBIDDEN: Naming candle patterns (e.g., \"pinbar\", \"engulfing\", \"doji\").\n- Must include in the paragraph: Why TP hit, what was correct in setup, one concrete improvement for next trade.\n\nLet's analyze the tape:\n- Trend before entry (17:30 - 20:20): General downtrend from 81536 high to 81363 low (21:10 low 81368).\n- Entry at 20:30 (81421.35 open, 81397.9 close). Price pulled back up to 81423.91 high at 20:30 candle (swing high retest).\n- Entry price 81425.63 is near the high of 20:30 candle (81423.91) and slightly above. Actually entry is 81425.63. The 20:30 candle High is 81423.91. Entry is slightly above the candle high. Wait, 20:30 candle: O 81421.35 H 81423.91 L 81387.9 C 81397.9. Entry 81425.63 is *above* the high of the entry candle. This suggests a limit order placed at a previous swing high/resistance level (maybe 18:20 area 81485 or 19:30 high 81480, or 20:00 high 81447). Let's look at recent swings.\n- Swing Highs: 18:00 (81576), 18:10 (81536), 19:30 (81480), 20:00 (81447), 20:30 (81423).\n- Entry 81425.63 is near the 20:30 high (81423.9) and 20:00 high (81447). It's a lower high structure.\n- SL 81525.63 is 100 points (1000 pips? No, BTCUSDm usually 1 pip = 0.01 or 0.1? Net profit 10 USD on 0.05 lot. 200 points move (81425 - 81225 = 200). 0.05 lot * 200 * 1 USD/point = 10 USD. So 1 point = $1 per lot. So 200 points = $10. SL distance = 100 points. TP distance = 200 points. R:R 1:2.\n- SL at 81525 is above previous major swing highs (18:00 81576, 19:30 81480). Actually 81525 is above 19:30 high (81480) and 20:00 high (81447). It's near 18:10 high (81536). Good SL placement above structure.\n- TP at 81225. Price went down to 81187 at 22:50",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-17 22:59:35",
+  "hasil": "TP"
+ }
+}
