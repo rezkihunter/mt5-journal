@@ -1,6 +1,6 @@
 # MT5 Dashboard
 
-Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi close/open, hasil TP/SL, kalender harian, dan evaluasi AI per posisi. Tanpa database — data dibaca langsung dari file JSON.
+Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi close/open, hasil TP/SL, kalender harian, laporan evaluasi AI **per jam** (bahasa awam), dan **memori pola jangka panjang**. Tanpa database — data dibaca langsung dari file JSON.
 
 > Panduan lengkap (setup + cara pakai): **[TUTORIAL.md](TUTORIAL.md)**
 
@@ -9,8 +9,8 @@ Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi
 - Ringkasan akun & metrik trade (net, winrate, jumlah posisi)
 - Filter posisi: semua / Hit TP / Hit SL
 - Kalender harian profit-loss
-- Menampilkan evaluasi AI per posisi (dari `ai.json`)
-- Auto-refresh tiap 30 detik, `Cache-Control: no-store`
+- Kartu **Evaluasi AI per jam** (dari `ai_report.json`) — ringkasan, yang bagus, yang rugi, saran perbaikan; plus `<details>` **Memori & pola jangka panjang** (dari `ai_memory.json`)
+- Auto-refresh tiap 10 detik, `Cache-Control: no-store`
 
 ## Arsitektur
 
@@ -21,9 +21,9 @@ Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi
 ## Menjalankan (lokal)
 
 1. Jadikan folder ini sebagai DocumentRoot Apache (contoh `http://127.0.0.1:2026`).
-2. Pastikan folder `../JurnalMT5/data/` berisi data hasil logger — lihat folder [`JurnalMT5/`](../JurnalMT5) (satu repo).
+2. Pastikan folder `../JurnalMT5/data/` berisi data hasil logger — lihat project **mt5-journal**.
 3. Buka `index.php` di browser.
 
 ## Data
 
-`api.php` membaca `closed.json`, `ai.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh folder [`JurnalMT5/`](../JurnalMT5).
+`api.php` membaca `closed.json`, `ai_report.json`, `ai_memory.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh project `JurnalMT5`.
