@@ -1,0 +1,6 @@
+{
+ "updated": "2026-10-20 06:45:15",
+ "model": "qwen/qwen3.8-27b",
+ "trades_seen": 82,
+ "text": "POLA:\n- [keyakinan: tinggi] XAUUSDm merugikan - bukti: 39 transaksi, net -30 USD, win rate 28%\n- [keyakinan: tinggi] Sesi siang 11-16 WIB buruk - bukti: 16 transaksi, net -38 USD, win rate 19%\n- [keyakinan: tinggi] Revenge trading merugikan - bukti: 15 transaksi, net -29 USD\n- [keyakinan: sedang] Trade 1-4 jam lebih baik dari <15 menit - bukti: 22 vs 33 transaksi, +40 vs -17 USD\n- [keyakinan: sedang] Jam 08:00, 18:00, 22:00 WIB bagus - bukti: 13 transaksi, win rate 75-80%, net +70 USD\n- [keyakinan: sedang] USTECm pair terbaik - bukti: 19 transaksi, net +37 USD, win rate 47%\n- [keyakinan: rendah] Profit tergantung sedikit trade besar - bukti: tanpa top 10% = -55 USD\n\nTREN: Trader untung tipis 27 USD dari 82 trade, tapi profit sangat bergantung pada beberapa trade besar. Tanpa 5 trade terbaik justru rugi.\n\nCATATAN: Baru 82 transaksi dalam 7 hari, kesimpulan belum kuat, perlu data lebih lama untuk konfirmasi."
+}

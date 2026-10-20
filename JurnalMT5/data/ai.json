@@ -364,5 +364,131 @@
   "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
   "updated": "2026-10-17 22:59:35",
   "hasil": "TP"
+ },
+ "2816818611": {
+  "evaluasi": "Entry 15:10 di area low 81565 tepat namun struktur berubah bullish usai 15:30 menembus high 81630-81650; SL 81705 terlalu dekat di atas high 16:00 (81677) sehingga tersapu breakout momentum 16:05. Benar: entry di zona overshoot sesi. Perbaikan: letakkan SL di atas swing high struktural signifikan (misal >81720) atau gunakan ATR buffer untuk menghindari noise breakout.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-18 16:05:10",
+  "hasil": "SL"
+ },
+ "2816945010": {
+  "evaluasi": "The user wants a single paragraph in Indonesian, max 80 words, no markdown, no bold, no opening/closing pleasantries.\nRole: Technical Trading Analyst.\nData: BTCUSDm SELL 0.05 lot, Open 81060.55, Close 81160.55 (SL hit), SL 81160.55, TP 80860.55, Net -5 USD, Duration 16.9 min.\nM5 Tape provided (WIB time).\nEntry (E) at 00:45 candle (Open 81051.11, High 81084.42, Low 80993.17, Close 81011.0).\nExit (X) at 01:00 candle (High 81183.38 - SL hit 81160.55).\n\nAnalysis requirements:\n1. Price action structure.\n2. Entry position relative to visible swings/high-low.\n3. SL/TP quality relative to structure.\n4. NO candle pattern names.\n5. Must include in the paragraph: Why SL hit, What was correct in setup, One concrete improvement for next trade.\n\nDrafting thoughts:\nEntry at 00:45 close (81011) was near the low of that candle (80993) and recent swing low area (00:35 low 81038, 00:40 low 81040). Actually, looking at 00:45 candle: O 81051, H 81084, L 80993, C 81011. Entry 81060.55 is near the Open/High of that entry candle? Wait, Entry price is 81060.55. The 00:45 candle High is 81084. Low 80993. Close 81011.\nThe tape says \"E\" at 00:45 row. Usually means entry happened during that candle or at close. Entry price 81060.55 is inside the 00:45 candle range (High 81084, Low 80993).\nPrevious swing high: 00:35 High 81110. 00:20 High 81115. 00:00 High 81122. 23:20 High 81160.\nSL at 81160.55 is exactly at 23:20 High (81160.41). That's a major swing high.\nPrice action after entry: 00:50 High 81086, 00:55 High 81091, 01:00 High 81183 (breaks SL).\nStructure: Price was making higher highs (23:20 81160 -> 00:00 81122 lower high? No, 23:20 81160, 00:00 81122, 00:20 81115, 00:35 81110, 01:00 81183). Actually, lower highs into 00:35, then breakout at 01:00.\nEntry was chasing a pullback in a range/consolidation below 81160 resistance.\nWhy SL hit: Breakout above key swing high 81160 (23:20) with momentum (01:00 candle huge range).\nWhat was correct: SL placed at structural resistance (swing high), R:R 1:1 (100 pips SL, 200 pips TP? Wait. Entry 81060. SL 81160 (100 pts). TP 80860 (200 pts). Risk 100, Reward 200. 1:2 R:R. Good R:R).\nImprovement: Wait for confirmation of rejection at resistance (lower timeframe structure break) or enter lower on pullback to support (e.g., 80990-81000 zone) instead of mid-range.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 01:04:17",
+  "hasil": "SL"
+ },
+ "2816967507": {
+  "evaluasi": "Entry di 03:25 (80850) terjadi di tengah konsolidasi tanpa konfirmasi breakdown struktur, jauh di atas swing low 03:15 (80560) sehingga risk-reward buruk; SL di 80970 terlalu dekat di atas high lokal 02:15 (81101) namun price action 04:10-04:20 menunjukkan tekanan beli kuat menembus resistance 80960 dengan volume naik, memaksa SL tersentuh. Benar dari setup: arah bias bearish sesuai tren turun sejak 01:05 dan TP di 80670 selaras target swing low. Perbaikan: tunggu retest gagal di zona 80960-80970 (supply zone) baru entry dengan SL di atas high 04:15 (80963).",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 04:22:36",
+  "hasil": "SL"
+ },
+ "2816573873": {
+  "evaluasi": "The user wants a technical analysis of a specific trade (USTECm SELL) based on provided M5 tape data.\nConstraints:\n- Language: Indonesian.\n- Format: Single paragraph.\n- Max length: 80 words.\n- No markdown/bold.\n- No opening/closing sentences (just the analysis).\n- Must include: why it hit TP, what was correct in the setup, one concrete improvement for next trade.\n- Forbidden: Naming candle patterns (e.g., \"pinbar\", \"engulfing\", \"doji\").\n- Focus: Price action structure, entry position relative to swing high/low, SL/TP quality relative to structure.\n\nTrade Data:\n- SELL 0.1 lot.\n- Open: 29204.63 (Entry time ~03:15 based on tape 'E').\n- Close: 29096.95 (Exit time ~05:00 based on tape 'X').\n- SL: 29255.38.\n- TP: 29105.38.\n- Net: 10.77 USD.\n- Duration: ~2987 min (Wait, 2987 minutes is ~50 hours. But tape shows entry 03:15 and exit 05:00 same day? That's ~105 mins. The duration data \"2987.2 mnt\" seems inconsistent with the tape timestamps provided (00:15 to 05:00). I should ignore the duration number if it conflicts with tape, or assume the tape is just a snippet. The tape shows entry at 03:15 and exit at 05:00. I will analyze based on the tape provided).\n\nTape Analysis:\n- Trend before entry (00:15 - 03:10): Clear downtrend. Lower highs, lower lows. 00:15 High 29335 -> 01:50 Low 29164 -> 02:05 Low 29095 -> Pullback to 03:10 High 29205.\n- Entry (03:15): 29188.64 O / 29181.89 C. Price pulled back to ~29205 (03:10 high) then dropped. Entry at 29204.63 (close to 03:10 high / 03:15 open). Good pullback entry at recent swing high resistance.\n- SL: 29255.38. Well above recent swing highs (03:10 high 29205, 02:55 high 29239, 02:25 high 29243). Very safe/wide SL.\n- TP: 29105.38. Targeting the 02:05 low (29095) / 01:50 low (29164) area. Price hit 29091.36 at 05:00 candle low.\n- Post-entry movement: Immediate drop after 03:15. 03:20-03:45 consolidation/pullback up to 29224 (03:40 high) but held below entry. Then strong breakdown 05:00 candle (29095 open -> 29202 close? Wait, 05:00 candle: O 29095.35 H 29205.12 L 29091.36 C 29202.14. This is a massive bullish candle covering the whole drop? No, Open 29095, Low 29091, High 29205, Close 29202. This looks like the TP hit at 29105 (inside the wick/low) then price reversed violently up. The exit \"X\" is at 05:00. Close price 29096.95 matches the low area.\n\nKey points for paragraph:\n1. Why TP hit: Price resumed downtrend breaking 02:05 swing low (29095) after consolidation below entry.\n2. What's correct: Entry at pullback to prior swing high (03:10/03:15 area) with wide SL",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 05:01:13",
+  "hasil": "TP"
+ },
+ "2817080295": {
+  "evaluasi": "The user wants a technical analysis of a specific trade (USTECm BUY) in Indonesian, single paragraph, max 80 words, no markdown/bold, no opening/closing sentences.\nKey data:\n- Trade: BUY 0.1 lot, Open 29456.02 (08:00), Close 29556.02 (09:00), SL 29405.77, TP 29555.77, Net +10 USD, Duration 67.9 min, Result TP.\n- M5 Tape provided (05:00 - 09:00 WIB).\n- Requirements: Analyze price structure, entry position vs swing high/low, SL/TP quality vs structure. NO candle pattern names.\n- Must include in paragraph: Why hit TP, what was correct in setup, one concrete improvement for next trade.\n\nAnalysis of tape:\n- Trend: Strong uptrend from 05:00 (29095) to 08:00 (29482).\n- Entry at 08:00 (29456.02) corresponds to candle 08:00 (O 29465.64 H 29488.63 L 29465.14 C 29482.39). Entry near low of that candle (29465.14) but actual open price 29456.02 is slightly below the printed low of that M5 candle (29465.14). Wait, entry is 29456.02. The 08:00 candle low is 29465.14. The previous candle (07:50) low is 29471.89. The 07:40 low is 29460.64. The 07:30 low is 29459.64. The 07:20 low is 29452.89. The 07:10 low is 29478.9.\n- Actually, looking at 08:00 candle: Open 29465.64, Low 29465.14. Entry 29456.02 is *below* the M5 low. This suggests entry might have been on a lower timeframe dip or the data provided is just M5 snapshot. The prompt says \"E=entry\" at 08:00 row.\n- SL 29405.77 is far below (approx 50 pts), well below previous swing lows (07:20 low 29452, 06:50 low 29453, 06:10 low 29420). Safe SL.\n- TP 29555.77. Price hit 29562.89 high at 09:00. TP hit.\n- Structure: Higher highs, higher lows. Entry on pullback to 08:00 low area (though entry price is lower than M5 low).\n- Why TP hit: Strong bullish momentum continued breaking 08:30 high (29536) towards 09:00 high (29562).\n- Correct: Trend alignment, SL placed safely below major swing low (06:10/07:20 area), RR approx 1:2 (Risk ~50, Reward ~100).\n- Improvement: Entry timing/chasing. Entry at 29456 was below M5 candle low (29465), suggesting possible limit order filled on spike or lower TF trigger. Better to wait for M5 close above 08:00 open or break of 08:10 high for confirmation, reducing drawdown risk (though SL was wide). Or tighten SL to recent swing low (07:20 low 29452) to improve R:R.\n\nDrafting Indonesian paragraph (max 80 words):\n\"TP tersentuh karena momentum naik kuat menembus high 08:30 (29536) ke 09:00 (29562) selaras tren naik HH-HL sejak 05:00. Setup benar: arah trend, SL aman di bawah swing",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 09:05:13",
+  "hasil": "TP"
+ },
+ "2817163835": {
+  "evaluasi": "Entry buy 09:20 di 4173.65 terlalu rendah di dekat swing low 09:15 (4174.66) tanpa konfirmasi struktur naik, SL 4170.36 terlalu dangkal di bawah low 08:05 (4166.12) namun harga turun tajam break struktur bearish dari 09:05 (4184.24) hingga 09:25 low 4169.99 memicu SL; benarnya setup mengikuti arah tren M5 yang masih bearish setelah gagal tembus 4185, perbaikan konkret: tunggu break & retest struktur tinggi lokal (misal >4177) baru entry buy dengan SL di bawah swing low terbaru.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 09:30:07",
+  "hasil": "SL"
+ },
+ "2817204290": {
+  "evaluasi": "Entry di 10:05 WIB (4178.438) tepat di atas low sesi 08:05 (4166.121) dan retest zona 08:35–09:05, memvalidasi bias bullish struktur naik; SL 4169.887 aman di bawah swing low signifikan 08:05 memberi ruang 500 poin logis, TP 4184.887 Tercapai di 11:55 WIB (high 4184.898) karena momentum breakout 09:05 (4184.243) berlanjut ke high 11:55; setup benar: entry pullback ke area value & SL mengikuti struktur swing; perbaikan: geser TP parsial ke 4180 (high 10:15) untuk mengunci profit saat momentum melemah 10:35–11:25.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 11:58:07",
+  "hasil": "TP"
+ },
+ "2817280528": {
+  "evaluasi": "Entry Buy 12:05 di 4182.122 terjadi di puncak swing high sesi 11:55-12:00 (4184.898) tanpa pullback ke area value, membuat posisi terperangkap di breakout palsu; SL 4174.581 diletakkan tepat di bawah swing low 12:10 (4178.038) namun terlalu dangkal terhadap volatilitas turun tajam ke 12:25 (4172.763) yang menembus struktur support 11:25-11:30. Benar dari setup: arah bias bullish sesi Asia-Europe transisi terlihat dari higher low 11:30 (4174.679) menuju 12:00. Perbaikan konkret: tunggu koreksi ke zona 50% Fibonacci swing 11:30-12:00 (~4178.5) dan konfirmasi M5 close di atas EMA 20 sebelum entry, serta geser SL ke bawah swing low signifikan terbaru (12:10 low 4178.038) dengan buffer ATR.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 12:29:13",
+  "hasil": "SL"
+ },
+ "2817341875": {
+  "evaluasi": "The user wants a technical analysis of a specific XAUUSDm trade in Indonesian, single paragraph, max 80 words, no markdown/bold, no opening/closing sentences.\nTrade details: BUY 0.01 lot, Entry 4180.78, Exit 4175.78 (SL hit), SL 4175.832, TP 4190.832, Net -5 USD, Duration 1.1 min (Wait, duration says 1.1 minutes but entry is 13:15 and data starts 10:15? Let me check the tape. The tape shows \"E\" at 13:15 candle. The trade duration says 1.1 minutes. That implies a scalp. Entry 4180.78. The 13:15 candle O: 4176.828 H: 4177.315 L: 4176.789 C: 4176.988. Wait, Entry is 4180.78 but the 13:15 candle high is only 4177.315. There is a massive discrepancy. The previous candle 13:10 closed at 4176.879. The 13:05 candle high was 4184.596. The 13:10 candle high was 4184.602. Entry 4180.78 happened likely inside the 13:10 candle or start of 13:15. But the tape marks \"E\" at 13:15. If entry was 4180.78 at 13:15 open, price gapped down massively from 13:10 close (4176.879) or 13:10 high (4184.6). Actually 13:10 Low is 4175.129. 13:10 Close 4176.879. 13:15 Open 4176.828. Entry 4180.78 is way above 13:15 Open/High. This suggests the entry timestamp might be earlier, or the \"E\" marker is wrong, or the entry price is from a previous session? No, \"Posisi XAUUSDm BUY... open 4180.78... durasi 1.1 mnt\". 1.1 minutes duration. SL 4175.83. Exit 4175.78.\nLooking at 13:10 candle: High 4184.602, Low 4175.129. Entry 4180.78 is inside this candle. SL 4175.83 is just above the 13:10 Low (4175.129). Price dropped to 4175.129 at 13:10, hitting SL. The \"E\" at 13:15 is confusing. Maybe the trade opened at 13:10:xx and closed at 13:10:xx + 1.1 min. The tape is M5. The \"E\" at 13:15 might be a mistake in the prompt data or indicates the candle where the trade *would* have been recorded if it lasted. But duration is 1.1 min.\nStructure: 13:05 High 4184.596. 13:10 High 4184.602 (Double Top area). 13:10 Low 4175.129 (Breakdown). Entry 4180.78 bought near highs/breakout failure. SL placed just below 13:10 low (4175.129) -> SL 4175.83. Price swept low 4175.129 -> Hit SL. Then reversed hard up (13:15 close 4176.9, 13:20... wait tape ends at 13:15).\nActually 13:15 Open 4176.828. Low 4176.789. So price stopped exactly at 13:10 low",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 13:15:28",
+  "hasil": "SL"
+ },
+ "2817340515": {
+  "evaluasi": "The user wants a technical analysis of a specific trade (USTECm BUY) in Indonesian, single paragraph, max 80 words, no markdown, no bold, no opening/closing sentences.\nKey data:\n- Buy 0.1 lot, Entry 29616.51, Exit (SL) 29566.51, SL 29566.26, TP 29716.26.\n- Net -5 USD, Duration ~98 mins, Result: SL hit.\n- M5 Tape data provided (OHLC).\n- Entry at 13:15 candle (Open 29612.39, High 29642.88, Low 29612.39, Close 29636.64). Entry price 29616.51 is near the low of that candle.\n- Exit at 14:45 candle (Low 29568.15). SL 29566.26 hit.\n- Structure analysis needed: Price action structure, entry location relative to swings, SL/TP quality.\n- Must mention: Why SL hit, what was correct in setup, one concrete improvement.\n- No candle pattern names.\n\nDrafting analysis:\nEntry di 13:15 (29616.51) terjadi di area low candle bullish besar tapi di bawah high 13:05 (29643.64), masuk saat pullback ke zona 29612-29616 yang konfluennya lemah karena bukan higher low signifikan dari swing 12:55/13:05. SL di 29566.26 diletakkan terlalu dalam (sekitar 50 poin) di bawah low 13:45 (29596.64) dan low 14:15 (29574.64), rentan noise volatilitas sesi US open. TP 29716.26 (RR ~1:2) realistis mengacu high 13:25 (29647.64) tapi momentum gagal tembus 29640. Benarnya: direction bias bullish sesudah break 29625 area 12:55 valid. Perbaikan: Tunggu retest struktur minor (misal break & retest 29610-29612 zona 14:05/14:15) dengan SL di bawah swing low terbaru (29574) untuk ruang gerak lebih aman.\n\nWord count check (Indonesian words):\n\"Entry di 13:15 (29616.51) terjadi di area low candle bullish besar tapi di bawah high 13:05 (29643.64), masuk saat pullback ke zona 29612-29616 yang konfluennya lemah karena bukan higher low signifikan dari swing 12:55/13:05. SL di 29566.26 diletakkan terlalu dalam (sekitar 50 poin) di bawah low 13:45 (29596.64) dan low 14:15 (29574.64), rentan noise volatilitas sesi US open. TP 29716.26 (RR ~1:2) realistis mengacu high 13:25 (29647.64) tapi momentum gagal tembus 29640. Benarnya: direction bias bullish sesudah break 29625 area 12:55 valid. Perbaikan: Tunggu retest struktur minor (misal break & retest 29610-29612 zona 14:05/14:15) dengan SL di bawah swing low terbaru (29574) untuk ruang gerak lebih aman.\"\n\nCount: ~85 words. Need to trim to <= 80.\n\nTrimmed:\nEntry 13:15 (29616.51) di low candle bullish tapi di bawah high 13:05 (29643.64), pullback ke zona 29612-29616 kon",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 14:51:17",
+  "hasil": "SL"
+ },
+ "2817437992": {
+  "evaluasi": "Entry BUY 14:40 di 4183.622 terjadi di puncak swing lokal sesi Asia (high 14:30 4190.5) saat momentum naik 14:30-14:35 sudah melemah (lower high 4188.27), membuat entry terlambat dan dekat resistance intraday; SL 4177.924 diletakkan tepat di bawah low 14:35 (4183.4) namun terlalu dangkal dari entry (57 pip) sehingga mudah tersentuh noise koreksi normal menuju area value 4178-4176, benarnya setup mengikuti arah trend naik sesi Eropa dan RR 1:1.8 logis, perbaikan: tunggu pullback ke zona 4180-4181 (50% fibonacci naik 14:30-14:35) dengan konfirmasi struktur M5 break structure bullish sebelum entry.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 14:53:09",
+  "hasil": "SL"
+ },
+ "2817488383": {
+  "evaluasi": "Entry82695.81 tepat di retest support 15:25 (low 82659.44) membentuk higher low setelah breakdown 14:45 gagal menembus 82628, SL 82595.81 aman di bawah swing low 14:55 (82589.9) memberi buffer 100 poin; TP 82895.81 tersentuh 16:25 berkat momentum breakout 15:35 (high 82870.49) yang mengkonfirmasi struktur bullish intraday. Setup benar: entry pullback ke area value dengan SL di bawah struktur invalidasi. Perbaikan: geser TP parsial ke 82800 (resistance 15:40/16:00) untuk mengamankan R:R 1:1 sebelum target ekstensi.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 16:28:18",
+  "hasil": "TP"
+ },
+ "2817583337": {
+  "evaluasi": "Entry di 29549.14 (17:30) tepat di bawah swing low 17:15 (29531.15) namun di atas high 17:25 (29550.89), membuat posisi terjebak di zona konsolidasi rawan false breakout; SL 29599.39 terlalu jauh (50 poin) melebihi swing high signifikan 17:35 (29603.63) sehingga risk-reward buruk, TP 29449.39 realistis mengarah ke low 17:20 (29525.9) tapi tercapai setelah SL kena; benarnya entry mengikuti breakdown 17:35 close 29562.89 dengan SL di atas high candle tersebut (29603.63) untuk memvalidasi momentum bearish; perbaikan: tunggu close M5 di bawah support 29530-29535 baru sell dengan SL ketat di atas high pullback immediat.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 17:42:40",
+  "hasil": "SL"
+ },
+ "2817619161": {
+  "evaluasi": "Entry SELL 17:55 di 4169.59 tepat di puncak swing high lokal 17:50–17:55 (high 4171.45) sebelum koreksi tajam 17:55–18:00, sehingga posisi entry sudah benar mengikuti struktur lower high dan momentum bearish awal; SL 4173.238 diletakkan tipis di atas high 17:50 (4171.45) namun terlalu dekat dengan noise breakout 18:05 yang menyentuh 4173.512, menyebabkan SL kena saat harga false breakout naik sebelum lanjut turun; perbaikan konkret: geser SL minimal 50–80 pip di atas swing high signifikansi terakhir (sekitar 4172.5–4173.0) atau gunakan trailing stop setelah harga membuat lower low konfirmasi di 18:00.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 18:08:09",
+  "hasil": "SL"
+ },
+ "2817783428": {
+  "evaluasi": "Entry di 4164.044 tepat di bawah swing high 18:15 (4177.165) dan retest gagal 20:10–20:15, memvalidasi bias bearish struktur turun; SL 4168.828 aman di atas lower high 20:05 (4165.521) memberikan buffer logis, TP 4153.828 terealisasi karena momentum breakdown 19:55 low (4159.44) diperkuat sell-off agresif 20:35–20:40 menembus support 4155; setup benar memanfaatkan pullback ke area value bearish, perbaikan: entry limit di 50% retracement penurunan 20:15–20:30 (sekitar 4162) untuk memperbaiki risk-reward dan mengurangi drawdown floating.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 20:43:10",
+  "hasil": "TP"
+ },
+ "2817906565": {
+  "evaluasi": "Entry 21:35 di area low koreksi (29601) membentuk higher low terhadap swing 21:30 (29597) memvalidasi lanjutan tren naik; SL 29558 aman di bawah struktur invalidasi. TP tersentuh manual dekat 29693 karena harga menembus high 21:20 (29698) lalu melemah di 21:55. Setup benar: masuk di discount pullback dengan risk/reward struktural. Perbaikan: terapkan trailing stop atau partial TP di high sebelumnya (29698) untuk mengunci profit saat momentum mulai melambat di 21:",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 21:56:43",
+  "hasil": "TP/manual-profit"
+ },
+ "2817932426": {
+  "evaluasi": "Entry sell82091 berada di area resistance 21:55 (high 82210) namun momentum naik 21:45–21:55 (low 81895 ke high 82210) masih kuat tanpa pullback jelas, SL 82191 terlalu dekat di tengah range consolidation 21:55–22:00 sehingga terpicu normal noise sebelum arah turun terbentuk; benar memanfaatkan rejection zona 82200–82260 sebagai bias bearish. Perbaikan: tunggu close M5 di bawah support immediate (misal low 21:55 82070) baru entry dengan SL di atas swing high lokal 82210 untuk ruang gerak wajar.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 22:00:17",
+  "hasil": "SL"
+ },
+ "2817960558": {
+  "evaluasi": "Entry di 4148.6 dekat high 22:30 (4148.7) valid sebagai sell limit di resistance minor setelah gagal tembus 4150, SL 4153.6 aman di atas swing high 20:30 (4167.4) dan high lokal 21:20 (4150.4), TP 4138.6 tertembus karena momentum bearish kuat terlihat dari lower low beruntun 4148→4143→4138 didukung penolakan di 4145-4147; setup benar memanfaatkan struktur lower high-low dan risk-reward 1:2, perbaikan: geser entry ke 4149.5 (50% retrace 22:30-22:40) untuk meminimalkan drawdown awal.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-19 23:48:47",
+  "hasil": "TP"
+ },
+ "2818062775": {
+  "evaluasi": "Entry sell 81922.01 (00:25) terjun di tengah konsolidasi tanpa konfirmasi breakdown struktur, SL 82022.01 terlalu longgar melebihi swing high 23:10 (81964.7) sehingga risk-reward buruk dan rentan noise; harga naik memecah high 00:20 (81972.47) pukul 01:00 memicu SL. Benar: arah bias bearish sesudah gagal tembus 82464 (21:45) dan TP 81722.01 sejajar support 23:00 (81628). Perbaikan: tunggu close M5 di bawah swing low terdekat (misal 81806 area 00:30) baru entry dengan SL di atas swing high lokal.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-20 01:02:10",
+  "hasil": "SL/manual-loss"
+ },
+ "2818113037": {
+  "evaluasi": "Entry di 01:55 (29605) terjadi di tengah konsolidasi tanpa konfirmasi breakdown struktur, SL terlalu dekat (hanya 1 pip di atas high 01:55) sehingga terpicu normal noise saat harga naik retest area 29635-29661 (swing high 02:20) sebelum turun drastis ke TP; benar arah bias bearish terlihat dari lower highs berturut-turut sejak 23:10 dan breakdown 00:45 menuju 29560; perbaikan: tunggu close M5 di bawah support terdekat (misal 29593) baru entry dengan SL di atas swing high lokal.",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-20 02:24:35",
+  "hasil": "SL"
+ },
+ "2818110257": {
+  "evaluasi": "The user wants a single paragraph in Indonesian, max 80 words, no markdown, no bold, no opening/closing sentences.\nRole: Technical Trading Analyst.\nData: BTCUSDm SELL 0.05 lot, Open 81857.63, Close 81957.63 (SL hit), SL 81957.63, TP 81657.63, Net -5 USD, Duration 54.8 min.\nTape M5 data provided with Entry (E) at 01:45 (Open 81826.11, High 81930.7, Low 81826.11, Close 81882.28) and Exit (X) at 02:40 (SL hit 81957.63 approx, tape shows High 81965.69 at 02:40).\nConstraints: Analyze price structure, entry position vs swing high/low, SL/TP quality vs structure. NO candle pattern names. Must include: why SL hit, what was correct in setup, one concrete improvement.\n\nAnalysis:\n- Entry at 01:45 (Close 81882.28). Price was making lower highs/lows prior (downtrend structure on M5).\n- Entry price 81857.63 (user data) vs Tape 01:45 Close 81882.28. Close enough.\n- SL at 81957.63. Recent Swing High before entry: 01:10 High 82060.44, 01:05 High 82064.55. Immediate Swing High before entry: 01:45 High 81930.7. SL placed above immediate swing high (81930.7) -> Good placement structurally.\n- Price action after entry: 01:50 High 81932.23 (tested SL area), 02:00 High 81892.55, 02:05 High 81883.43, 02:15 High 81888.28, 02:20 High 81917.35, 02:25 High 81922.0, 02:35 High 81942.28, 02:40 High 81965.69 (SL hit).\n- Structure: Series of Lower Highs broken at 02:40 (High 81965 > Prev High 81942 > 81922 > 81917). Trend structure shifted to bullish/range expansion upwards.\n- Why SL hit: Price broke the lower high structure (market structure shift) triggering SL placed just above previous local high.\n- What was correct: SL placement respected immediate swing high (01:45 High 81930), risk management defined (R:R 1:1 approx 200 pts SL / 200 pts TP).\n- Improvement: Wait for confirmation of lower high formation (e.g., break of immediate swing low) before entering sell, or trail SL tighter after 02:05 low 81751 held? Or better: Enter on retest of broken support/resistance flip. Concrete: \"Tunggu penutupan di bawah swing low terdekat (02:05 low 81751) sebagai konfirmasi lanjutan tren bearish sebelum entry.\"\n\nDrafting paragraph (Indonesian, <80 words):\n\"SL tersentuh karena harga memecah struktur lower high (02:35 high 81942 → 02:40 high 81965) menandakan shift momentum bullish. Setup benar: SL diletakkan di atas swing high lokal 01:45 (81930) menghormati struktur pasar dan risk reward 1:1 jelas. Perbaikan: tunggu konfirmasi break struktur bearish (close di bawah swing low 02:05 area 81751) sebelum entry sell agar tidak terjebak pullback di tengah konsolidasi.\"\n\nWord count check: ~65 words. Good.\nNo markdown. No bold. Single paragraph. Indonesian. Contains why",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "updated": "2026-10-20 02:43:21",
+  "hasil": "SL"
  }
 }
