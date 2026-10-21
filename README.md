@@ -13,7 +13,7 @@ Satu project untuk memantau & mengevaluasi jurnal trade MetaTrader 5:
 
 ## Alur
 
-1. `JurnalMT5/fetch_closed.py` — konek ke MT5, ambil posisi closed baru, simpan pita harga M5, tulis `data/`.
+1. `JurnalMT5/fetch_closed.py` — konek ke MT5, ambil posisi closed baru, simpan pita harga M5, tulis `data/` (termasuk `cash_flow.json` berisi deposit/withdrawal).
 2. `JurnalMT5/evaluate.py` — evaluasi tiap posisi baru via model OpenRouter (primary + fallback) → `data/ai.json`.
 3. `htdocs/api.php` + `htdocs/index.php` — baca data dan render dashboard (auto-refresh 30 detik).
 

@@ -90,6 +90,10 @@ header("Cache-Control: no-store, max-age=0"); ?>
       <div class="col-6 col-lg-3 mb-4"><div class="card h-100 mb-0"><div class="card-body p-3"><p class="text-sm mb-0 text-uppercase font-weight-bold">Total Net (close)</p><h5 class="font-weight-bolder mb-0" id="st-net">–</h5></div></div></div>
     </div>
     <div class="row">
+      <div class="col-6 col-lg-3 mb-4"><div class="card h-100 mb-0"><div class="card-body p-3"><p class="text-sm mb-0 text-uppercase font-weight-bold">Deposit / WD</p><h5 class="font-weight-bolder mb-0" id="st-cash">–</h5><p class="text-xs text-secondary mb-0" id="st-cash-sub">dalam rentang data</p></div></div></div>
+      <div class="col-6 col-lg-3 mb-4"><div class="card h-100 mb-0"><div class="card-body p-3"><p class="text-sm mb-0 text-uppercase font-weight-bold">Growth (ex-cash)</p><h5 class="font-weight-bolder mb-0" id="st-growth">–</h5><p class="text-xs text-secondary mb-0" id="st-modal" title="Estimasi modal = saldo sekarang - net trade close - (deposit - withdrawal), dihitung dalam rentang days_back.">modal est. –</p></div></div></div>
+    </div>
+    <div class="row">
       <div class="col-12 mb-4"><div class="card mb-0"><div class="card-header pb-0"><h6 class="mb-0">Posisi Open — <span id="acc">…</span></h6></div><div class="card-body p-3"><div class="table-responsive" id="open">memuat…</div></div></div></div>
     </div>
     <div class="row">
@@ -117,6 +121,7 @@ header("Cache-Control: no-store, max-age=0"); ?>
 <script>
 let curFilter='', pnlChart=null, dateFrom='', dateTo='';
 function wib(d){return new Date(d*1000).toLocaleDateString('en-CA',{timeZone:'Asia/Jakarta'});}
+function r2(v){return Math.round((+v||0)*100)/100;}
 function setDate(){dateFrom=document.getElementById('f-from').value;dateTo=document.getElementById('f-to').value;load();}
 function resetDate(){const t=wib(Date.now()/1000);document.getElementById('f-from').value=t;document.getElementById('f-to').value=t;dateFrom=t;dateTo=t;load();}
 function clearDate(){document.getElementById('f-from').value='';document.getElementById('f-to').value='';dateFrom='';dateTo='';load();}
@@ -194,7 +199,7 @@ async function load(){
   try{
     const r=await fetch('api.php',{headers:{'Accept':'application/json'}}).then(r=>r.json());
     try{document.getElementById('meta').textContent='update '+((r.meta||{}).updated||'-');}catch(_){}
-    const sig=JSON.stringify([(r.closed||[]).map(x=>x.position_id+':'+x.net+':'+x.hasil),((r.report||{}).updated||'')+((r.memory||{}).updated||''),r.open||[],curFilter,dateFrom,dateTo]);
+    const sig=JSON.stringify([(r.closed||[]).map(x=>x.position_id+':'+x.net+':'+x.hasil),((r.report||{}).updated||'')+((r.memory||{}).updated||''),r.open||[],curFilter,dateFrom,dateTo,(r.cash||[]).length+':'+((r.meta||{}).deposit||0)+':'+((r.meta||{}).withdrawal||0)]);
     if(sig===lastSig)return; lastSig=sig;
     const acc=r.account||{};
     document.getElementById('acc').textContent=(acc.login?('Akun '+acc.login+' · '+(acc.server||'')):'');
@@ -206,6 +211,18 @@ async function load(){
     const net=closed.reduce((a,x)=>a+(+x.net||0),0);
     document.getElementById('st-wr').textContent=closed.length?Math.round(wins/closed.length*100)+'% ('+wins+'/'+closed.length+')':'–';
     document.getElementById('st-net').textContent=(net>=0?'+':'')+Math.round(net*100)/100+' USD';
+    const cash=r.cash||[];
+    const dep=cash.filter(x=>(+x.amount||0)>0).reduce((a,x)=>a+(+x.amount||0),0);
+    const wd=cash.filter(x=>(+x.amount||0)<0).reduce((a,x)=>a-(+x.amount||0),0);
+    const netCash=dep-wd;
+    document.getElementById('st-cash').textContent=cash.length?('+'+r2(dep)+' / -'+r2(wd)):'–';
+    document.getElementById('st-cash-sub').textContent=cash.length?(cash.length+' transaksi · net '+((netCash>=0?'+':'')+r2(netCash))+' USD'):'belum ada deposit/withdrawal';
+    const modal=r2((+acc.balance||0)-net-netCash);
+    const growth=modal>0?(net/modal*100):null;
+    const gEl=document.getElementById('st-growth');
+    gEl.textContent=growth!=null?((growth>=0?'+':'')+growth.toFixed(1)+'%'):'–';
+    gEl.className='font-weight-bolder mb-0 '+(growth==null?'':(growth>0?'text-success':(growth<0?'text-danger':'')));
+    document.getElementById('st-modal').textContent=modal>0?('modal est. '+r2(modal)+' USD'):'modal est. –';
     const rep=r.report||{};
     document.getElementById('rep-body').innerHTML=rep.eval?md(rep.eval):'Belum ada laporan — terbentuk otomatis tiap 1 jam.';
     document.getElementById('rep-meta').textContent=rep.updated?('Diperbarui '+rep.updated+' · '+(rep.n_trades||0)+' transaksi'):'menunggu laporan pertama…';

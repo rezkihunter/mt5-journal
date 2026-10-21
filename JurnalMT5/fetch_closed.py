@@ -50,6 +50,20 @@ def init_mt5(mt5, cfg):
 def save(name, obj):
     (DATA / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
 
+CASH_DEAL_TYPES = {2, 3, 6}  # balance, credit, bonus
+
+def cash_entry(d):
+    """Deal non-trading yang mengubah balance (deposit/withdrawal/credit) -> dict."""
+    amount = round(sum(float(d.get(k, 0.0) or 0.0) for k in ("profit", "commission", "swap", "fee")), 2)
+    if amount == 0:
+        return None
+    if d.get("type") == 2:
+        kind = "DEPOSIT" if amount > 0 else "WITHDRAWAL"
+    else:
+        kind = "CREDIT"
+    return {"ticket": d.get("ticket"), "time": d.get("time"), "kind": kind,
+            "amount": amount, "comment": d.get("comment") or "", "deal_type": d.get("type")}
+
 def main():
     import MetaTrader5 as mt5
     cfg = json.loads((BASE / "config.json").read_text(encoding="utf-8"))
@@ -82,10 +96,14 @@ def main():
         snap_path.write_text(json.dumps(snap, ensure_ascii=False, indent=1), encoding="utf-8")
 
         deals = mt5.history_deals_get(frm, to) or []
-        groups = {}
+        groups, cash = {}, []
         for x in deals:
             d = x._asdict()
             if d.get("position_id", 0) == 0:
+                if d.get("type") in CASH_DEAL_TYPES:
+                    item = cash_entry(d)
+                    if item:
+                        cash.append(item)
                 continue
             groups.setdefault(str(d["position_id"]), []).append(d)
 
@@ -144,9 +162,14 @@ def main():
                 r["tape"] = tp
         tape_path.write_text(json.dumps(tapes, ensure_ascii=False), encoding="utf-8")
         save("closed.json", closed)
+        cash.sort(key=lambda r: r["time"], reverse=True)
+        save("cash_flow.json", cash)
+        deposit = round(sum(r["amount"] for r in cash if r["amount"] > 0), 2)
+        withdrawal = round(-sum(r["amount"] for r in cash if r["amount"] < 0), 2)
         save("meta.json", {"updated": now.strftime("%Y-%m-%d %H:%M:%S"), "open_count": len(open_list),
-                            "closed_count": len(closed), "account": (acc._asdict().get("login") if acc else None)})
-        log(f"OK open={len(open_list)} closed={len(closed)}")
+                            "closed_count": len(closed), "account": (acc._asdict().get("login") if acc else None),
+                            "cash_count": len(cash), "deposit": deposit, "withdrawal": withdrawal})
+        log(f"OK open={len(open_list)} closed={len(closed)} cash={len(cash)} (dep {deposit} / wd {withdrawal})")
         return 0
     finally:
         mt5.shutdown()

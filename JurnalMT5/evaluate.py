@@ -128,6 +128,15 @@ def dur_bucket(mnt):
         return "c) 1-4j"
     return "d) >4j"
 
+def rr_plan(r):
+    """Rasio TP/SL yang direncanakan saat entry (None bila TP/SL tak ada)."""
+    if not r.get("tp") or not r.get("sl") or not r.get("open_price"):
+        return None
+    risk = abs(r["open_price"] - r["sl"])
+    if risk <= 0:
+        return None
+    return abs(r["tp"] - r["open_price"]) / risk
+
 DOW = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"]
 
 # ---------- arsip kumulatif ----------
@@ -211,6 +220,27 @@ def build_pack(rows, cfg):
     avg_dw = rnd(sum(aw) / len(aw), 0) if aw else 0
     avg_dl = rnd(sum(al) / len(al), 0) if al else 0
 
+    rr = [x for x in (rr_plan(r) for r in rows) if x is not None]
+    raw_cost = -sum(float(r.get("net", 0.0)) - float(r.get("profit", 0.0)) for r in rows)
+    costs = rnd(raw_cost) if raw_cost > 0.005 else 0.0
+    gross = round(sum(float(r.get("profit", 0.0)) for r in rows if r["net"] > 0), 2)
+    cost_pct = rnd(costs / gross * 100) if gross > 0 else None
+
+    mfe_lost, mae_win, caps = [], [], []
+    for r in rows:
+        ex = get_exc(r)
+        if not ex:
+            continue
+        mfe_r, mae_r = ex
+        if r["net"] < 0 and mfe_r >= 1:
+            mfe_lost.append(r)
+        if r["net"] > 0 and mae_r >= 1:
+            mae_win.append(r)
+        if r["net"] > 0 and mfe_r > 0:
+            rr_real = rmult(r)
+            if rr_real is not None:
+                caps.append(min(rr_real / mfe_r, 1.0))
+
     first = dt_wib(min(r["open_time"] for r in rows)).strftime("%d/%m/%Y")
     last = dt_wib(max(r["close_time"] for r in rows)).strftime("%d/%m/%Y")
 
@@ -232,19 +262,29 @@ def build_pack(rows, cfg):
     L.append(f"# KONSENTRASI: {' | '.join(conc)}")
     if exc_txt:
         L.append(f"# EXCURSION: {exc_txt}")
+    if rr:
+        L.append(f"# RR RENCANA: rata2 1:{rnd(sum(rr) / len(rr))} (dari {len(rr)} trade ber-TP), "
+                 f"realisasi rata2 {rnd(sum(rs) / len(rs)) if rs else 0} R")
+    L.append(f"# BIAYA: {rnd(costs)} USD" + (f" ({cost_pct}% dari profit kotor {gross} USD)" if cost_pct is not None else ""))
+    if caps:
+        L.append(f"# EXIT: trade menang hanya menangkap {rnd(sum(caps) / len(caps) * 100, 0)}% dari puncak (MFE) rata2")
+    L.append(f"# MISFIRE: {len(mfe_lost)} trade pernah >=1R untung tapi close rugi "
+             f"(net {rnd(sum(r['net'] for r in mfe_lost))} USD) | "
+             f"{len(mae_win)} trade pernah >=1R floating loss tapi close untung")
     L.append(f"# PER JAM buka (WIB): {group_lines(rows, hour_wib, order=sorted({hour_wib(r) for r in rows}))}")
     L.append(f"# PER HARI: {group_lines(rows, lambda r: DOW[dt_wib(r['open_time']).weekday()], order=DOW)}")
     L.append(f"# PER PAIR: {group_lines(rows, lambda r: r['symbol'])}")
     L.append(f"# PER SISI: {group_lines(rows, lambda r: r['type'], order=['BUY', 'SELL'])}")
     L.append(f"# PER DURASI: {group_lines(rows, lambda r: dur_bucket(r['durasi_mnt']))}")
     L.append(f"# PER SESI: {group_lines(rows, lambda r: session_wib(hour_wib(r)), order=['Pagi 06-11', 'Siang 11-16', 'Sore 16-21', 'Malam 21-06'])}")
+    L.append(f"# SESI x SISI: {group_lines(rows, lambda r: session_wib(hour_wib(r)) + '/' + r['type'])}")
     L.append(f"# PER HASIL: {group_lines(rows, lambda r: r['hasil'])}")
     top_w = sorted(rows, key=lambda r: r["net"], reverse=True)[:3]
     top_l = sorted(rows, key=lambda r: r["net"])[:3]
     fmt = lambda r: f"{dt_wib(r['open_time']).strftime('%d/%m %H:%M')} {r['symbol']} {r['type']} {rnd(r['net'])} USD ({r['durasi_mnt']}m, {r['hasil']})"
     L.append("# TOP MENANG: " + " | ".join(fmt(r) for r in top_w))
     L.append("# TOP RUGI: " + " | ".join(fmt(r) for r in top_l))
-    L.append(f"# REVENGE (buka <=15m setelah loss sebelumnya): {len(rev)} trade, net {rnd(sum(r['net'] for r in rev))} USD")
+    L.append(f"# REVENGE (buka <=15m setelah loss sebelumnya): {len(rev)} trade, menang {winrate(rev)}%, net {rnd(sum(r['net'] for r in rev))} USD")
     return "\n".join(L)
 
 def build_prompt(pack, mem_text, mem_max):
@@ -258,14 +298,18 @@ def build_prompt(pack, mem_text, mem_max):
         "Balas PERSIS dengan format ini, tanpa teks pembuka/penutup lain:\n"
         "===LAPORAN===\n"
         "**RINGKASAN** (2-3 kalimat: jumlah transaksi, menang/kalah, untung atau rugi berapa USD)\n"
-        "**YANG SUDAH BAGUS** (3-5 bullet '-', sebut jam/hari/pair + angkanya)\n"
-        "**YANG BIKIN RUGI** (3-5 bullet, sebut jumlah transaksinya)\n"
-        "**SARAN PERBAIKAN** (3-5 bullet perintah praktis)\n"
+        "**POLA PROFIT (penyebab)** (3-5 bullet: kondisi pemicu + angka + SEBAB kenapa kebetulan menang)\n"
+        "**POLA LOSS (penyebab)** (3-5 bullet: kondisi pemicu + angka + SEBAB kenapa rugi)\n"
+        "**SARAN PERBAIKAN** (3-5 bullet perintah praktis yang menyerang penyebab loss)\n"
         "===MEMORI===\n"
-        f"(maksimal {mem_max} kata; baris 'POLA:' lalu bullet '- [keyakinan: tinggi/sedang/rendah] pola - bukti: N transaksi, net X USD', "
+        f"(maksimal {mem_max} kata; baris 'POLA:' lalu bullet '- [keyakinan: tinggi/sedang/rendah] pola - sebab: ... - bukti: N transaksi, net X USD', "
         "lalu baris 'TREN:' 1-2 kalimat, lalu baris 'CATATAN:' 1 kalimat. "
         "Gabungkan MEMORI SEBELUMNYA dengan data baru: perkuat pola yang konsisten, pensiunkan yang tak berlaku, "
         "tambah pola baru bila bukti cukup. Ini yang membuatmu terus memahami pola sampai kapan pun.)\n"
+        "Setiap bullet POLA wajib berbentuk sebab-akibat: kondisi (jam/hari/sesi/pair/arah/durasi/RR) -> angka (winrate/net) -> "
+        "kenapa terjadi (contoh: entry terlalu cepat sehingga harga sempat -1R dulu; TP terlalu jauh sehingga profit 1R berbalik jadi rugi; "
+        "biaya terlalu besar untuk durasi pendek; balas dendam setelah loss). "
+        "Pakai data EXCURSION, EXIT, MISFIRE, RR RENCANA, BIAYA, SESI x SISI bila ada. JANGAN mengarang angka di luar data.\n"
         "Hanya 4 judul bagian LAPORAN yang boleh dibold. JANGAN bold kata/angka lain.\n"
         "LAPORAN maksimal ~250 kata. WAJIB menulis KEDUA blok (===LAPORAN=== dan ===MEMORI===) sampai selesai.\n"
         "Bila total transaksi < 20, ingatkan bahwa kesimpulan belum kuat.\n\n"

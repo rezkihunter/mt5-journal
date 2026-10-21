@@ -1,3 +1,5 @@
 private/
 *.log
 .lastbusy
+__pycache__/
+*.py[cod]

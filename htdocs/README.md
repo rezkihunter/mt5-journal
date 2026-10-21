@@ -7,9 +7,10 @@ Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi
 ## Fitur
 
 - Ringkasan akun & metrik trade (net, winrate, jumlah posisi)
+- Kartu **Deposit / WD** + **Growth (ex-cash)** — cash flow dipisah dari P&L trade, jadi pertumbuhan akun tidak salah dibaca saat ada deposit/withdrawal
 - Filter posisi: semua / Hit TP / Hit SL
 - Kalender harian profit-loss
-- Kartu **Evaluasi AI per jam** (dari `ai_report.json`) — ringkasan, yang bagus, yang rugi, saran perbaikan; plus `<details>` **Memori & pola jangka panjang** (dari `ai_memory.json`)
+- Kartu **Evaluasi AI per jam** (dari `ai_report.json`) — ringkasan, **pola profit & pola loss beserta penyebabnya**, saran perbaikan; plus `<details>` **Memori & pola jangka panjang** (dari `ai_memory.json`)
 - Auto-refresh tiap 10 detik, `Cache-Control: no-store`
 
 ## Arsitektur
@@ -26,4 +27,4 @@ Dashboard web (PHP) untuk memantau jurnal trade MetaTrader 5 secara live: posisi
 
 ## Data
 
-`api.php` membaca `closed.json`, `ai_report.json`, `ai_memory.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh project `JurnalMT5`.
+`api.php` membaca `closed.json`, `cash_flow.json`, `ai_report.json`, `ai_memory.json`, `open.json`, `account.json`, `meta.json` yang dihasilkan oleh project `JurnalMT5`.
